@@ -1,0 +1,55 @@
+<?php session_start();?>
+<?php
+include '/Applications/MAMP/htdocs/farmdata/authentication.php';
+include '/Applications/MAMP/htdocs/farmdata/design.php';
+include '/Applications/MAMP/htdocs/farmdata/connection.php';
+?>
+
+<form name='form' class='pure-form pure-form-aligned' method='GET' action='gh_table.php'>
+<input type="hidden" name="tab" value="seeding:flats:flats_report">
+<center>
+<h2> Tray Seeding Report</h2>
+</center>
+<fieldset>
+<div class="pure-control-group">
+<?php
+echo "<label for='from'>From:</label>";
+include '/Applications/MAMP/htdocs/farmdata/date.php';
+echo "</div>";
+echo '<div class="pure-control-group">';
+echo "<label for='to'>To:</label>";
+include '/Applications/MAMP/htdocs/farmdata/date_transdate.php';
+echo "</div>";
+?>
+<div class="pure-control-group">
+<label for="crop">Crop:</label>
+<select name='crop' class='mobile-select'>
+<option value = "%" selected="selected"> All </option>
+<?php
+$result = $dbcon->query("SELECT distinct  crop from gh_seeding");
+while ($row1 =  $result->fetch(PDO::FETCH_ASSOC)){
+  echo "\n<option value= \"$row1[crop]\">$row1[crop]</option>";
+}
+?>
+</select>
+</div>
+<?php
+if ($_SESSION['gens']) {
+   echo '<div class="pure-control-group">';
+   echo '<label for="genSel">Succession #:</label> ';
+   echo '<select name="genSel" class="mobile-select">';
+   echo '<option value = "%" selected="selected"> All </option>';
+   $result = $dbcon->query("SELECT distinct gen from gh_seeding order by gen");
+   while ($row1 =  $result->fetch(PDO::FETCH_ASSOC)){
+      echo "\n<option value= \"$row1[gen]\">$row1[gen]</option>";
+   }
+   echo '</select>';
+   echo '</div>';
+} else {
+   echo '<input type="hidden" name="genSel" value="%">';
+}
+?>
+</fieldset>
+<br clear="all"/>
+<br clear="all"/>
+<input class='submitbutton pure-button wide' type="submit" name="submit" value="Submit">

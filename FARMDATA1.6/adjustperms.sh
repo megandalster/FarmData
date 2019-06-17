@@ -8,7 +8,7 @@ else
   dirperm=775
 echo "loosen"
 fi
-cd src
+cd ../html
 eval chmod -f $fileperm *.php *.html *.css
 eval chmod -f $dirperm Admin
 cd setup

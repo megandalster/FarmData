@@ -1,0 +1,12 @@
+<?php
+include '/Applications/MAMP/htdocs/farmdata/connection.php';
+
+$material = escapehtml($_GET['material']);
+
+$sql = "SELECT REI_HRS FROM tSprayMaterials WHERE sprayMaterial='".$material."'";
+$result = $dbcon->query($sql);
+$row = $result->fetch(PDO::FETCH_ASSOC);
+
+echo $row['REI_HRS'];
+
+?>

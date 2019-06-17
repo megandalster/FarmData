@@ -27,45 +27,6 @@ fi
 
 LOCALHOST=y
 UPGRADE=n
-if [ -f config ]; then
-   echo "Existing FARMDATA installation detected!"
-   txt=$(< config)
-#   ARR=(${txt//:/ })
-#   ARR=$(echo $txt | tr ":" "\n")
-   IFS=':' read -ra ARR <<< "$txt"
-   USERDB="${ARR[0]}"
-   USERUSER="${ARR[1]}"
-   USERPASS="${ARR[2]}"
-   FARMDB="${ARR[3]}"
-   FDIR="${ARR[4]}"
-   DOMAIN="${ARR[5]}"
-   FULLPATH="${ARR[6]}"
-   if [[ ${#ARR[@]} == 8 ]]; then
-      MYSQLHOST="${ARR[7]}"
-   else
-      MYSQLHOST="localhost"
-   fi
-   if [ -z $FULLPATH ]; then
-      echo "Config file corrupted - please continue with new installation or"
-      echo "press ^C to terminate installation."
-   else 
-      echo "FARMDATA URL: "$DOMAIN/$FDIR
-      echo "Installation directory: "$FULLPATH
-      echo ""
-      echo "Do you wish to upgrade the existing installation?"
-      echo "(Enter y to upgrade, n to proceed with new installation)."
-      read UPGRADE
-      if [ $UPGRADE = Y ]; then
-        UPGRADE=y
-      fi
-      if [ $UPGRADE = y ]; then
-         echo "Proceeding with FARMDATA upgrade."
-      else
-         echo "Proceeding with new FARMDATA installation."
-         UPGRADE=n
-      fi
-   fi
-fi
 
 if [ $UPGRADE = n ]; then
    echo "Is your web server also your MySQL server?  (Enter y or n.)";
@@ -242,12 +203,12 @@ else
       read FIRSTPASS
       FIRSTPASS=`php -r "print crypt('$FIRSTPASS', '123salt');"`
    
-      mysql -u $UU -p$UP -Bse "use $USERDB; source tables/userTables.txt;
+      /Applications/MAMP/Library/bin/mysql -u $UU -p$UP -Bse "use $USERDB; source tables/userTables.txt;
            insert into farms values('$FARMDB', '$FARMPASS', '$FARMUSER');
            insert into users values('$FIRSTUSER', '$FIRSTPASS', '$FARMDB', 1, 1);" || { 
             echo "Setting up user database failed.  Exiting FARMDATA install!"; exit 1; }
 
-      mysql -u $FU -p$FP -Bse "use $FARMDB; source tables/baseTables.txt;
+      /Applications/MAMP/Library/bin/mysql -u $FU -p$FP -Bse "use $FARMDB; source tables/baseTables.txt;
             source tables/dfTables.txt;" || { 
             echo "Setting up farm database failed.  Exiting FARMDATA install!"; exit 1; }
    
@@ -265,129 +226,129 @@ fi
 
 echo "Configuring files - this will take a few moments."
 
-for file in `find src -name '.svn'`; do
+for file in `find ../html -name '.svn'`; do
    rm -rf $file
 done
 
-for file in `find src -name '*.php'`; do
-  sed -i "s/wahlst_users/$USERDB/" $file || { echo "Error configuring files.  Exiting FARMDATA install"; 
+for file in `find ../html -name '*.php'`; do
+  sed -i "" "s/wahlst_users/$USERDB/" $file || { echo "Error configuring files.  Exiting FARMDATA install"; 
           exit 1; }
-  sed -i "s/wahlst_usercheck/$USERUSER/" $file || { echo "Error configuring files.  Exiting FARMDATA install";
+  sed -i "" "s/wahlst_usercheck/$USERUSER/" $file || { echo "Error configuring files.  Exiting FARMDATA install";
           exit 1; }
-  sed -i "s/usercheckpass/$USERPASS/" $file || { echo "Error configuring files.  Exiting FARMDATA install";
+  sed -i "" "s/usercheckpass/$USERPASS/" $file || { echo "Error configuring files.  Exiting FARMDATA install";
           exit 1; }
-  sed -i "s/localhost/$MYSQLHOST/" $file || { echo "Error configuring files.  Exiting FARMDATA install";
+  sed -i "" "s/localhost/$MYSQLHOST/" $file || { echo "Error configuring files.  Exiting FARMDATA install";
           exit 1; }
 done
 
 if [[ $SSL != y ]]; then
-   for file in "src/extlogin.php" "src/design.php" "src/logout.php" "src/connection.php" "src/setup/extlogin.php"; do
-      sed -i "s%// HTTPSON%/*%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
+   for file in "../html/extlogin.php" "../html/design.php" "../html/logout.php" "../html/connection.php" "../html/setup/extlogin.php"; do
+      sed -i "" "s%// HTTPSON%/*%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
            exit 1; }
-      sed -i "s%// HTTPSOFF%*/%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
+      sed -i "" "s%// HTTPSOFF%*/%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
            exit 1; }
    done
 fi
 
 if [[ $FDIR != "" ]]; then
 
-for file in `find src -name '*.php'`; do
-  sed -i "s%\$_SERVER\['DOCUMENT_ROOT'\]\.'/%'$FULLPATH%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
+for file in `find ../html -name '*.php'`; do
+  sed -i "" "s%\$_SERVER\['DOCUMENT_ROOT'\]\.'/%'$FULLPATH%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
           exit 1; }
-  sed -i "s%/down\.php%/$FDIR/down.php%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
+  sed -i "" "s%/down\.php%/$FDIR/down.php%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
           exit 1; }
-  sed -i "s%/color\.css%/$FDIR/color.css%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
+  sed -i "" "s%/color\.css%/$FDIR/color.css%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
           exit 1; }
-  sed -i "s%/pure-release%/$FDIR/pure-release%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
+  sed -i "" "s%/pure-release%/$FDIR/pure-release%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
           exit 1; }
-#  sed -i "s%/pure-release%/$FDIR/pure-release%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
+#  sed -i "" "s%/pure-release%/$FDIR/pure-release%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
 #          exit 1; }
 done
 
-for file in "src/extlogin.php" "src/design.php" "src/logout.php" "src/admintab.php" "src/hartab.php" "src/labortab.php" "src/notetab.php" "src/seedtab.php" "src/soiltab.php" "src/setup/setup.php" "src/setup/extlogin.php" "src/connection.php"; do
-   sed -i "s%/tabs\.css%/$FDIR/tabs.css%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
+for file in "../html/extlogin.php" "../html/design.php" "../html/logout.php" "../html/admintab.php" "../html/hartab.php" "../html/labortab.php" "../html/notetab.php" "../html/seedtab.php" "../html/soiltab.php" "../html/setup/setup.php" "../html/setup/extlogin.php" "../html/connection.php"; do
+   sed -i "" "s%/tabs\.css%/$FDIR/tabs.css%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
         exit 1; }
-#   sed -i "s%/mobileTable\.css%/$FDIR/mobileTable.css%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
+#   sed -i "" "s%/mobileTable\.css%/$FDIR/mobileTable.css%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
 #        exit 1; }
-   sed -i "s%/mobileTabs\.css%/$FDIR/mobileTabs.css%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
+   sed -i "" "s%/mobileTabs\.css%/$FDIR/mobileTabs.css%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
         exit 1; }
-   sed -i "s%/mobileDesign2\.css%/$FDIR/mobileDesign2.css%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
+   sed -i "" "s%/mobileDesign2\.css%/$FDIR/mobileDesign2.css%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
         exit 1; }
-   sed -i "s%/tableDesign\.css%/$FDIR/tableDesign.css%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
+   sed -i "" "s%/tableDesign\.css%/$FDIR/tableDesign.css%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
         exit 1; }
-   sed -i "s%/design\.css%/$FDIR/design.css%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
+   sed -i "" "s%/design\.css%/$FDIR/design.css%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
         exit 1; }
-   sed -i "s%/apple%/$FDIR/apple%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
+   sed -i "" "s%/apple%/$FDIR/apple%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
         exit 1; }
-   sed -i "s%/icon%/$FDIR/icon%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
+   sed -i "" "s%/icon%/$FDIR/icon%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
         exit 1; }
-   sed -i "s%/design\.php%/$FDIR/design.php%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
+   sed -i "" "s%/design\.php%/$FDIR/design.php%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
         exit 1; }
-   sed -i "s%/logout\.php%/$FDIR/logout.php%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
-        exit 1; }
-done
-
-for file in "src/header.php" "src/logout.php" "src/connection.php"; do
-   sed -i "s%\$_SERVER\['HTTP_HOST'\]\.\"%\$_SERVER\['HTTP_HOST'\]\.\"/$FDIR%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
+   sed -i "" "s%/logout\.php%/$FDIR/logout.php%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
         exit 1; }
 done
 
-sed -i "s%updateCrop\.php%$FDIR/updateCrop.php%" src/chooseCrop.php || { echo "Error configuring files.  Exiting FARMDATA install";
-        exit 1; }
-sed -i "s%/wfb\.php%/$FDIR/wfb.php%" src/admintab.php || { echo "Error configuring files.  Exiting FARMDATA install";
-        exit 1; }
-
-for file in "src/Admin/Backtracker/backtracker.php" "src/Admin/adminHarvest/harvestListAdmin.php" "src/Labor/laborReport.php" "src/hartab.php" "src/Labor/labor.php" "src/Harvest/harvestEdit.php"; do
-   sed -i "s%/Harvest/%/$FDIR/Harvest/%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
+for file in "../html/header.php" "../html/logout.php" "../html/connection.php"; do
+   sed -i "" "s%\$_SERVER\['HTTP_HOST'\]\.\"%\$_SERVER\['HTTP_HOST'\]\.\"/$FDIR%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
         exit 1; }
 done
 
-for file in "src/Soil/coverEdit.php" "src/soiltab.php" ; do
-   sed -i "s%/Soil/%/$FDIR/Soil/%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
+sed -i "" "s%updateCrop\.php%$FDIR/updateCrop.php%" ../html/chooseCrop.php || { echo "Error configuring files.  Exiting FARMDATA install";
+        exit 1; }
+sed -i "" "s%/wfb\.php%/$FDIR/wfb.php%" ../html/admintab.php || { echo "Error configuring files.  Exiting FARMDATA install";
+        exit 1; }
+
+for file in "../html/Admin/Backtracker/backtracker.php" "../html/Admin/adminHarvest/harvestListAdmin.php" "../html/Labor/laborReport.php" "../html/hartab.php" "../html/Labor/labor.php" "../html/Harvest/harvestEdit.php"; do
+   sed -i "" "s%/Harvest/%/$FDIR/Harvest/%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
         exit 1; }
 done
 
-for file in "src/seedtab.php" "src/Admin/Backtracker/backtracker.php"; do
-   sed -i "s%/Seeding/%/$FDIR/Seeding/%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
+for file in "../html/Soil/coverEdit.php" "../html/soiltab.php" ; do
+   sed -i "" "s%/Soil/%/$FDIR/Soil/%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
+        exit 1; }
+done
+
+for file in "../html/seedtab.php" "../html/Admin/Backtracker/backtracker.php"; do
+   sed -i "" "s%/Seeding/%/$FDIR/Seeding/%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
         exit 1; }
 done
 
 
-sed -i "s%/Notes/%/$FDIR/Notes/%" src/notetab.php || { echo "Error configuring files.  Exiting FARMDATA install";
+sed -i "" "s%/Notes/%/$FDIR/Notes/%" ../html/notetab.php || { echo "Error configuring files.  Exiting FARMDATA install";
         exit 1; }
-sed -i "s%/Admin/%/$FDIR/Admin/%" src/admintab.php || { echo "Error configuring files.  Exiting FARMDATA install";
+sed -i "" "s%/Admin/%/$FDIR/Admin/%" ../html/admintab.php || { echo "Error configuring files.  Exiting FARMDATA install";
         exit 1; }
-sed -i "s%/Labor/%/$FDIR/Labor/%" src/labortab.php || { echo "Error configuring files.  Exiting FARMDATA install";
-        exit 1; }
-
-sed -i "s%/HomeMobile%/$FDIR/HomeMobile%" src/header.php || { echo "Error configuring files.  Exiting FARMDATA install";
-        exit 1; }
-sed -i "s%/BackArrow%/$FDIR/BackArrow%" src/header.php || { echo "Error configuring files.  Exiting FARMDATA install";
-        exit 1; }
-sed -i "s%/Logout%/$FDIR/Logout%" src/header.php || { echo "Error configuring files.  Exiting FARMDATA install";
+sed -i "" "s%/Labor/%/$FDIR/Labor/%" ../html/labortab.php || { echo "Error configuring files.  Exiting FARMDATA install";
         exit 1; }
 
-for file in "src/Admin/Config/config.php"; do
-   sed -i "s%exthome%$FDIR/exthome%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
+sed -i "" "s%/HomeMobile%/$FDIR/HomeMobile%" ../html/header.php || { echo "Error configuring files.  Exiting FARMDATA install";
+        exit 1; }
+sed -i "" "s%/BackArrow%/$FDIR/BackArrow%" ../html/header.php || { echo "Error configuring files.  Exiting FARMDATA install";
+        exit 1; }
+sed -i "" "s%/Logout%/$FDIR/Logout%" ../html/header.php || { echo "Error configuring files.  Exiting FARMDATA install";
+        exit 1; }
+
+for file in "../html/Admin/Config/config.php"; do
+   sed -i "" "s%exthome%$FDIR/exthome%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
         exit 1; }
 done
 
 fi
 
-for file in "src/index.html" "src/default.html" "src/redirect.html"; do
-   sed -i "s%url=login\.php%url=extlogin.php%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
+for file in "../html/index.html" "../html/default.html" "../html/redirect.html"; do
+   sed -i "" "s%url=login\.php%url=extlogin.php%" $file || { echo "Error configuring files.  Exiting FARMDATA install";
         exit 1; }
 done
 
-rm -f src/login.php
-rm -f src/guest.php
-rm -rf src/files/*
+rm -f ../html/login.php
+rm -f ../html/guest.php
+rm -rf ../html/files/*
 
 
 # echo "Adjusting file permissions"
 ./adjustperms.sh -t
 echo "Moving files to installation directory"
-cp -r src/* $FULLPATH
+cp -r ../html/* $FULLPATH
 
 mkdir -p $FULLPATH/files/
 chmod 777 $FULLPATH/files/
@@ -396,7 +357,7 @@ chmod 777 $FULLPATH/files/$FARMDB
 mkdir -p $FULLPATH/files/$FARMDB/wfbtrash
 chmod 777 $FULLPATH/files/$FARMDB/wfbtrash
 
-rm -rf src/*
+rm -rf ../html/*
 
 if [ $UPGRADE = n ]; then
    echo "Successful FARMDATA installation!"
