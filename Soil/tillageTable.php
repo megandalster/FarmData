@@ -11,7 +11,7 @@ include '/Applications/MAMP/htdocs/farmdata/Admin/Delete/warn.php';
       try {
          $stmt = $dbcon->prepare($sqlDel);
          $stmt->execute();
-      } catch (PODException $p) {
+      } catch (PDOException $p) {
          phpAlert('', $p);
          die();
       }
