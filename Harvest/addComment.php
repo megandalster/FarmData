@@ -1,9 +1,9 @@
 <?php session_start(); ?>
 <?php
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
-include '/Applications/MAMP/htdocs/farmdata/authentication.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/authentication.php';
 if (!isset($_POST['submit'])) {
-  include '/Applications/MAMP/htdocs/farmdata/design.php';
+  include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
 }
 
 echo "<form name='comment' method='POST' action='addComment.php?year=".

@@ -1,7 +1,7 @@
 <?php session_start(); ?>
 <?php 
-include '/Applications/MAMP/htdocs/farmdata/Admin/authAdmin.php';
-include '/Applications/MAMP/htdocs/farmdata/design.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Admin/authAdmin.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
 
 $farm = $_SESSION['db'];
 if ($farm != 'dfarm') {
@@ -23,7 +23,7 @@ if ($farm != 'dfarm') {
       $useropts.='<option value="'.$row['username'].'">'.$row['username'].'</option>';
    }
 }
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 
 ?>
 <form name='form' class="pure-form pure-form-aligned" method='POST'>
@@ -249,8 +249,8 @@ echo "<tr><td><center><input class='wide' type='text' name='waterPerAcre' id='wa
 <br clear="all"/>
 <br clear="all"/>
 <?php
-include '/Applications/MAMP/htdocs/farmdata/Admin/Delete/functions.php';
-include '/Applications/MAMP/htdocs/farmdata/Admin/Delete/rowsMatfunc.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Admin/Delete/functions.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Admin/Delete/rowsMatfunc.php';
 $count=1;
 while( $count <= $numRows){
    echo "<script type='text/javascript'> addAcre(".$count."); calculateTotalUpdate(); calculateWater();</script>";

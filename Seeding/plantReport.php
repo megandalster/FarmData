@@ -1,8 +1,8 @@
 <?php session_start();?>
 <?php
-include '/Applications/MAMP/htdocs/farmdata/authentication.php';
-include '/Applications/MAMP/htdocs/farmdata/design.php';
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/authentication.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 ?>
 
 <form name='form' method='GET' class='pure-form pure-form-aligned' action='dir_table.php'>
@@ -14,12 +14,12 @@ include '/Applications/MAMP/htdocs/farmdata/connection.php';
 <div class='pure-control-group'>
 <label for='from'>From:</label>
 <?php
-include '/Applications/MAMP/htdocs/farmdata/date.php'; 
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/date.php'; 
 echo "</div>";
 echo "<div class='pure-control-group'>";
 echo "<label for='to'>To:</label>";
 if ($_SESSION['mobile']) echo "<br clear='all'/>";
-include '/Applications/MAMP/htdocs/farmdata/date_transdate.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/date_transdate.php';
 echo "</div>";
 ?>
 <div class='pure-control-group'>

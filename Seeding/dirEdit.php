@@ -20,9 +20,9 @@ if ($farm != 'dfarm') {
    }
 }
 
-include '/Applications/MAMP/htdocs/farmdata/Admin/authAdmin.php';
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
-include '/Applications/MAMP/htdocs/farmdata/design.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Admin/authAdmin.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
 
 $id=$_GET['id'];
 $origYear = $_GET['year'];
@@ -133,7 +133,7 @@ echo '</select></div>';
 echo '<div class="pure-control-group" id="lastharvdiv">';
 echo '</div>';
 
-include '/Applications/MAMP/htdocs/farmdata/Seeding/annual.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Seeding/annual.php';
 
 echo '<div class="pure-control-group">';
 echo '<label>User:</label>';
@@ -168,7 +168,7 @@ for ($row = 1; $row <= 9; $row++) {
 }
 echo '</select></div>';
 
-include '/Applications/MAMP/htdocs/farmdata/Admin/Delete/getGen.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Admin/Delete/getGen.php';
 if ($_SESSION['labor']) {
    echo '<div class="pure-control-group">';
    echo '<label>Hours:</label>';
@@ -224,7 +224,7 @@ if ($_POST['submit']) {
       $lastMonth = $_POST['lastMonth'];
       $lastDay = $_POST['lastDay'];
    }
-   include '/Applications/MAMP/htdocs/farmdata/Seeding/setGen.php';
+   include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Seeding/setGen.php';
    $sql = "update dir_planted set username='".$user."', fieldID='".$fld."', plantdate='".$year."-".
      $month."-".$day."', bedft=".$bedftv.",rowsBed=".$numrows.",hours=".$hours.",comments='".
      $comSanitized."',crop='".$crop."',gen=".$gen.", annual = ".$annual.", lastHarvest = '".

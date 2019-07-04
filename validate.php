@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '/Applications/MAMP/htdocs/farmdata/escapehtml.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/escapehtml.php';
 $dbcon = new PDO('mysql:host=localhost;dbname=farmusersdb', 'farmusersdb', 'foodyWr1',
     array(PDO::MYSQL_ATTR_INIT_COMMAND => 'set sql_mode="TRADITIONAL"'));
 $dbcon->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

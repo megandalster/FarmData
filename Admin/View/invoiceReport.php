@@ -1,8 +1,8 @@
 <?php session_start(); ?>
 <?php
-	include '/Applications/MAMP/htdocs/farmdata/Admin/authAdmin.php';
-	include_once '/Applications/MAMP/htdocs/farmdata/connection.php';
-	include '/Applications/MAMP/htdocs/farmdata/design.php';
+	include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Admin/authAdmin.php';
+	include_once $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
+	include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
 ?>
 <center><h2 class="hi"> Select Invoice Records: </h2></center>
 
@@ -13,12 +13,12 @@
 	<?php
 	echo '<div class = "pure-control-group">';
 	echo '<label for="from">From:</label>';
-	include '/Applications/MAMP/htdocs/farmdata/date.php';
+	include $_SERVER['DOCUMENT_ROOT'].'/farmdata/date.php';
 	echo '</div>';
 
 	echo '<div class = "pure-control-group">';
 	echo '<label for="to">To:</label>';
-	include '/Applications/MAMP/htdocs/farmdata/date_transdate.php';
+	include $_SERVER['DOCUMENT_ROOT'].'/farmdata/date_transdate.php';
 	echo '</div>';
 	?>
 	<br clear="all">

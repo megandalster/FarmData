@@ -1,9 +1,9 @@
 <?php session_start(); ?>
 <form name='form' method='POST' action='/farmdata/down.php'>
 <?php
-include '/Applications/MAMP/htdocs/farmdata/Admin/authAdmin.php';
-include '/Applications/MAMP/htdocs/farmdata/design.php';
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Admin/authAdmin.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 $farm = $_SESSION['db'];
 if ($_SESSION['sales_invoice']) {
    $sql = "select crop, units, units_per_case, dh_units as invoice_units, active from plant";

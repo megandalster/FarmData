@@ -1,11 +1,11 @@
 <?php session_start();
 echo "<html>";
 
-include '/Applications/MAMP/htdocs/farmdata/Admin/authAdmin.php';
-include_once '/Applications/MAMP/htdocs/farmdata/connection.php';
-include '/Applications/MAMP/htdocs/farmdata/design.php';
-include '/Applications/MAMP/htdocs/farmdata/stopSubmit.php';
-include '/Applications/MAMP/htdocs/farmdata/Admin/Sales/convert.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Admin/authAdmin.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/stopSubmit.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Admin/Sales/convert.php';
 
 $sql = "select * from distribution order by distDate";
 $result = $dbcon->query($sql);
@@ -143,7 +143,7 @@ while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
 <div id="DistributionTableHeader" class = 'pure-control-group' style="display:none;">
 <label>Distribution Date:</label>
 <?php 
-include '/Applications/MAMP/htdocs/farmdata/date.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/date.php';
 ?>
 <br clear='all'>
 <br clear='all'>

@@ -1,10 +1,10 @@
 <?php session_start(); ?>
 <?php
-include '/Applications/MAMP/htdocs/farmdata/authentication.php';
-include '/Applications/MAMP/htdocs/farmdata/design.php';
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
-include '/Applications/MAMP/htdocs/farmdata/stopSubmit.php';
-include '/Applications/MAMP/htdocs/farmdata/Soil/clearForm.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/authentication.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/stopSubmit.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Soil/clearForm.php';
 ?>
 <center>
 <h2> Insect Scouting Input Form </h2>
@@ -22,7 +22,7 @@ if (isset($_POST['day']) && isset($_POST['month']) && isset($_POST['year'])) {
 if (isset($_POST['fieldID'])) {
    $field = escapehtml($_POST['fieldID']);
 }
-include '/Applications/MAMP/htdocs/farmdata/date.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/date.php';
 ?>
 </div>
 
@@ -54,7 +54,7 @@ while ($row1 = $result->fetch(PDO::FETCH_ASSOC)){
 </select>
 </div>
 <?php
-include '/Applications/MAMP/htdocs/farmdata/Soil/crop.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Soil/crop.php';
 ?>
 <br clear="all"/>
 <center>
@@ -163,7 +163,7 @@ class="textbox2 mobile-input-half single_table" value="1">
 </select>
 </div> ';
 
-include '/Applications/MAMP/htdocs/farmdata/timer.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/timer.php';
 }
 ?>
 
@@ -300,7 +300,7 @@ if (isset($_POST['submit'])) {
       $totalHours = 0;
    }
 
-   include '/Applications/MAMP/htdocs/farmdata/Soil/imageUpload.php';
+   include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Soil/imageUpload.php';
 
    $sql="Insert into pestScout(sDate,fieldID,crops,pest,avgCount,comments,hours,filename) values ('".
       $_POST['year']."-".$_POST['month']."-".$_POST['day']."','".$fieldID.

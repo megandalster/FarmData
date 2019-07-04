@@ -1,8 +1,8 @@
 <?php session_start(); ?>
 <?php
-include '/Applications/MAMP/htdocs/farmdata/Admin/authAdmin.php';
-include '/Applications/MAMP/htdocs/farmdata/design.php';
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Admin/authAdmin.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 ?>
 
 <form name='form' class='pure-form pure-form-aligned' method='GET' action="deleteTspray.php">
@@ -17,14 +17,14 @@ include '/Applications/MAMP/htdocs/farmdata/connection.php';
 <div class="pure-control-group">
 <label for='from'>From:</label>
 <?php
-include '/Applications/MAMP/htdocs/farmdata/date.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/date.php';
 ?>
 </div>
 
 <div class="pure-control-group">
 <label for='to'>To:</label>
 <?php
-include '/Applications/MAMP/htdocs/farmdata/date_transdate.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/date_transdate.php';
 ?>
 </div>
 

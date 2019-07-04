@@ -1,5 +1,5 @@
 <?php 
-include '/Applications/MAMP/htdocs/farmdata/escapehtml.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/escapehtml.php';
 $user = escapehtml($_GET['user']);
 try {
    $dbcon = new PDO('mysql:host=localhost;dbname=farmusersdb', 'farmusersdb', 'foodyWr1');

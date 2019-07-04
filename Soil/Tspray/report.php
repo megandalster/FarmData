@@ -1,6 +1,6 @@
 <?php session_start();
-include '/Applications/MAMP/htdocs/farmdata/design.php';
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
  ?>
 <script type="text/javascript">
 

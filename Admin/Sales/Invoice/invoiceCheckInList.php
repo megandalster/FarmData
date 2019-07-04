@@ -1,5 +1,5 @@
 <?php
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 $sql="SELECT invoice_entry.invoice_no, product, cases, price_case, salesDate ".
    "FROM invoice_entry, invoice_master where product= '".
    escapehtml($_GET['product'])."' and target = '".escapehtml($_GET['target']).

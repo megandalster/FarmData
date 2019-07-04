@@ -1,10 +1,10 @@
 <?php session_start(); ?>
 <?php
-include '/Applications/MAMP/htdocs/farmdata/authentication.php';
-include '/Applications/MAMP/htdocs/farmdata/design.php';
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
-include '/Applications/MAMP/htdocs/farmdata/stopSubmit.php';
-include '/Applications/MAMP/htdocs/farmdata/Soil/clearForm.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/authentication.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/stopSubmit.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Soil/clearForm.php';
 ?>
 <form name='form' id='test' class='pure-form pure-form-aligned'  method='POST' 
    action="<?php echo $_SERVER['PHP_SELF'];?>?tab=soil:soil_scout:soil_disease:disease_input"
@@ -24,7 +24,7 @@ if (isset($_POST['day']) && isset($_POST['month']) && isset($_POST['year'])) {
 if (isset($_POST['fieldID'])) {
    $field = escapehtml($_POST['fieldID']);
 }
-include '/Applications/MAMP/htdocs/farmdata/date.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/date.php';
 ?>
 </div>
 
@@ -50,7 +50,7 @@ echo '</div>';
 ?>
 
 <?php
-include '/Applications/MAMP/htdocs/farmdata/Soil/crop.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Soil/crop.php';
 ?>
 
 <div class="pure-control-group">
@@ -196,7 +196,7 @@ class="textbox2 mobile-input-half single_table" value="1">
 </select>
 </div> ';
 
-include '/Applications/MAMP/htdocs/farmdata/timer.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/timer.php';
 }
 ?>
 
@@ -344,7 +344,7 @@ if (isset($_POST['submit'])) {
       $totalHours = 0;
    }
 
-   include '/Applications/MAMP/htdocs/farmdata/Soil/imageUpload.php';
+   include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Soil/imageUpload.php';
 
    $sql = "Insert into diseaseScout(sDate,fieldID,crops,disease,infest,stage,comments,hours,filename) ".
       "values ('".  $_POST['year']."-".$_POST['month']."-".$_POST['day']."','".

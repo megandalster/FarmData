@@ -1,10 +1,10 @@
 <?php session_start();?>
 <!DOCTYPE html>
 <?php
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
-include '/Applications/MAMP/htdocs/farmdata/authentication.php';
-include '/Applications/MAMP/htdocs/farmdata/design.php';
-include '/Applications/MAMP/htdocs/farmdata/stopSubmit.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/authentication.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/stopSubmit.php';
 ?>
 
 <form name='form' class='pure-form pure-form-aligned' id='transform' method='POST' action="<?php echo $_SERVER['PHP_SELF']; ?>?tab=seeding:transplant:transplant_input">
@@ -23,8 +23,8 @@ if (isset($_POST['day']) && isset($_POST['month']) && isset($_POST['year'])) {
 if (isset($_POST['fieldID'])) {
    $field = escapehtml($_POST['fieldID']);
 }
-//include '/Applications/MAMP/htdocs/farmdata/date_transdate.php';
-include '/Applications/MAMP/htdocs/farmdata/date.php';
+//include $_SERVER['DOCUMENT_ROOT'].'/farmdata/date_transdate.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/date.php';
 ?>
 </div>
 <?php
@@ -124,7 +124,7 @@ if ($_SESSION['labor']) {
 </select>
 </div>';
 
-include '/Applications/MAMP/htdocs/farmdata/timer.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/timer.php';
 }
 ?>
 
@@ -220,7 +220,7 @@ function show_confirm() {
      con += "Number of trays: "+ numF+ "<br>";
 
 <?php
-  include '/Applications/MAMP/htdocs/farmdata/Seeding/checkGen.php';
+  include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Seeding/checkGen.php';
   if ($_SESSION['labor']) {
     echo '
      var numW = document.getElementById("numW").value;
@@ -285,7 +285,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
    } else {
       $totalHours = 0;
    }
-   include '/Applications/MAMP/htdocs/farmdata/Seeding/setGen.php';
+   include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Seeding/setGen.php';
    $annual = $_POST['annual'];
    if ($annual == 1) {
       $lastYear = $_POST['year'];

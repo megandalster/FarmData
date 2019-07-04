@@ -1,8 +1,8 @@
 <?php session_start(); ?>
 <?php
-include '/Applications/MAMP/htdocs/farmdata/authentication.php';
-include '/Applications/MAMP/htdocs/farmdata/design.php';
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/authentication.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 ?>
 <form name='form' id='test' class='pure-form pure-form-aligned' method='POST' action="<?php echo $_SERVER['PHP_SELF'];?>?tab=soil:soil_spray:bspray:bspray_input">
 <center>
@@ -12,7 +12,7 @@ include '/Applications/MAMP/htdocs/farmdata/connection.php';
 <div class="pure-control-group">
 <label for='date'> Date: </label>
 <?php
-include '/Applications/MAMP/htdocs/farmdata/date.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/date.php';
 ?>
 </div>
 <script>
@@ -178,7 +178,7 @@ function addInput() {
 <input type="text" class="textbox2 mobile-input single_table" id="mix" name="mix">
 </div>
 <?php
-include '/Applications/MAMP/htdocs/farmdata/Soil/crop.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Soil/crop.php';
 ?>
 
 <div class="pure-control-group">

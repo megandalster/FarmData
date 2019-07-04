@@ -1,5 +1,5 @@
 <?php
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 $fieldID = escapehtml($_GET['fieldID']);
 
 $sqlGetTime = 'select start_time from field_irrigation where fieldID=\''.$fieldID.'\'';

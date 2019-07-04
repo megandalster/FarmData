@@ -1,8 +1,8 @@
 <?php session_start(); ?>
 <?php
-include_once '/Applications/MAMP/htdocs/farmdata/connection.php';
-include '/Applications/MAMP/htdocs/farmdata/authentication.php';
-include '/Applications/MAMP/htdocs/farmdata/design.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/authentication.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
 $year = $_GET['year'];
 $month = $_GET['month'];
 $day = $_GET['day'];

@@ -1,5 +1,5 @@
 <?php
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata//Applications/MAMP/htdocs/farmdata/connection.php';
 
 $lastHarvest = $_GET['id'];
 

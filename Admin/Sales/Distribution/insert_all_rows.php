@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 
 $fields_array = json_decode($_GET['fields_array']);
 $values_array_all = json_decode($_GET['values_array']);

@@ -1,5 +1,5 @@
 <?php
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 $sql = "Select BRateMin as min, BRateMax as max, BRateDefault as default2 from tSprayMaterials ".
   "where sprayMaterial = '".escapehtml($_GET['material'])."' ";
 $result = $dbcon->query($sql);

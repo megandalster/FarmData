@@ -1,16 +1,16 @@
 <?php session_start();?>
 <?php
-include '/Applications/MAMP/htdocs/farmdata/authentication.php';
-include '/Applications/MAMP/htdocs/farmdata/design.php';
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
-include '/Applications/MAMP/htdocs/farmdata/Soil/clearForm.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/authentication.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Soil/clearForm.php';
 ?>
 <center><h2> <b> Add a Comment</b> </h2></center>
 <form name="form" method="post" class = "pure-form pure-form-aligned"  action="<?php $_PHP_SELF ?>?tab=notes:notes_input" enctype="multipart/form-data">
 <div class = "pure-control-group">
 <label for="date">Date:</label>
 <?php
-include '/Applications/MAMP/htdocs/farmdata/date.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/date.php';
 ?>
 </div>
 <div class ="pure-control-group"><label for="note">Comment:</label>
@@ -70,7 +70,7 @@ if (!empty($_POST['submit'])) {
       die();
    } else if (isset($_FILES['fileIn']) && isset($_FILES['fileIn']['tmp_name']) &&
       $_FILES['fileIn']['tmp_name'] != "") {
-      //       $fname = '/Applications/MAMP/htdocs/farmdata/files/'.$_SESSION['db'].'/'.$_FILES['fileIn']['name'];
+      //       $fname = $_SERVER['DOCUMENT_ROOT'].'/farmdata/files/'.$_SESSION['db'].'/'.$_FILES['fileIn']['name'];
       $fname = '../files/'.$_SESSION['db'].'/'.$_FILES['fileIn']['name'];
       if (file_exists($fname)) {
          echo "<script>alert(\"File ".$fname." already exists - try a different file name.\");</script> \n";

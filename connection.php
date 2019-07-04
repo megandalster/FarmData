@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '/Applications/MAMP/htdocs/farmdata/escapehtml.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/escapehtml.php';
 $host = "localhost";
 $user = $_SESSION['dbuser'];
 $pass = $_SESSION['dbpass'];

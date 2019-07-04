@@ -1,8 +1,8 @@
 <?php session_start();?>
 <?php
-include '/Applications/MAMP/htdocs/farmdata/authentication.php';
-include '/Applications/MAMP/htdocs/farmdata/design.php';
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/authentication.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 
 ?>
 <center><h2> <b> View Comments </b> </h2></center>
@@ -10,10 +10,10 @@ include '/Applications/MAMP/htdocs/farmdata/connection.php';
 <input type = "hidden" name = "tab" value = "notes:notes_report">
 <?php
 echo "<div class = 'pure-control-group'><label for='from'>From:&nbsp;</label>";
-include '/Applications/MAMP/htdocs/farmdata/date.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/date.php';
 echo '<br clear="all"/>';
 echo "<label for='to'>To:&nbsp;</label>";
-include '/Applications/MAMP/htdocs/farmdata/date_transdate.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/date_transdate.php';
 echo '<br clear="all"/></div>';
 echo '<br clear="all"/>';
 echo '<input class="submitbutton pure-button wide" type="submit" name="submit" value="Submit">';

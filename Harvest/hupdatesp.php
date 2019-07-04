@@ -1,5 +1,5 @@
 <?php
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 $sql="Select distinct unit from extUnits";
 $result=$dbcon->query($sql);
 while ($row=$result->fetch(PDO::FETCH_ASSOC)) {

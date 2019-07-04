@@ -1,6 +1,6 @@
 <?php session_start();
-include '/Applications/MAMP/htdocs/farmdata/Admin/authAdmin.php';
-include_once '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Admin/authAdmin.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 $crop = escapehtml($_POST['crop']);
 $year = $_POST['year'];
 if ($_POST['isCover'] == "false") {

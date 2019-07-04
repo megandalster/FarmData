@@ -1,8 +1,8 @@
 <?php session_start(); ?>
 <?php
-include '/Applications/MAMP/htdocs/farmdata/authentication.php';
-include '/Applications/MAMP/htdocs/farmdata/design.php';
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/authentication.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 ?>
 <form name='form' id='test' class='pure-form pure-form-aligned' method='GET' action="compostTable.php">
 <input type="hidden" name="tab" value="soil:soil_fert:soil_compost:compost_report">
@@ -12,13 +12,13 @@ include '/Applications/MAMP/htdocs/farmdata/connection.php';
 <div class="pure-control-group">
 <label for='date'> From:</label>
 <?php
-include '/Applications/MAMP/htdocs/farmdata/date.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/date.php';
 ?>
 </div>
 <div class="pure-control-group">
 <label for='date2'> To:</label>
 <?php
-include '/Applications/MAMP/htdocs/farmdata/date_transdate.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/date_transdate.php';
 ?>
 </div>
 
@@ -37,7 +37,7 @@ while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
 
 <?php
 	$active = 'active';
-	include '/Applications/MAMP/htdocs/farmdata/fieldID.php';
+	include $_SERVER['DOCUMENT_ROOT'].'/farmdata/fieldID.php';
 ?>
 
 <br clear="all"/>

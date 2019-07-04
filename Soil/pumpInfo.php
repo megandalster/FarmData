@@ -1,9 +1,9 @@
 <?php
      session_start();
-    include '/Applications/MAMP/htdocs/farmdata/design.php';
-     include '/Applications/MAMP/htdocs/farmdata/connection.php';
-     include '/Applications/MAMP/htdocs/farmdata/authentication.php';
-     include '/Applications/MAMP/htdocs/farmdata/stopSubmit.php';
+    include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
+     include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
+     include $_SERVER['DOCUMENT_ROOT'].'/farmdata/authentication.php';
+     include $_SERVER['DOCUMENT_ROOT'].'/farmdata/stopSubmit.php';
      $farm = $_SESSION['db'];
 ?>
 <head>
@@ -58,7 +58,7 @@ if ($row['year']) {
          ?> 
           <div class='pure-control-group'>
                <label for="ddiv">Date:</label>
-               <?php include '/Applications/MAMP/htdocs/farmdata/date.php'?>
+               <?php include $_SERVER['DOCUMENT_ROOT'].'/farmdata/date.php'?>
           </div>
           <div class='pure-control-group'>
                <label>Valves Open Last Session:</label>
@@ -244,7 +244,7 @@ setInterval(function () {
  </div>
 <br clear="all"/>
 <?php
-include '/Applications/MAMP/htdocs/farmdata/Soil/irrigationFunctions.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Soil/irrigationFunctions.php';
 ?>
 </form>
 <?php

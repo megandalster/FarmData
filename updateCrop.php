@@ -1,5 +1,5 @@
 <?php
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 $typ = $_GET['typ'];
 if ($typ == "harvesting") {
   $sql = "select crop from (SELECT crop from dir_planted where year(plantdate) = '".$_GET['year'].

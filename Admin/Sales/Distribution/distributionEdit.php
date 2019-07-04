@@ -18,9 +18,9 @@ function getUnit(){
 </script>
 
 <?php
-include '/Applications/MAMP/htdocs/farmdata/Admin/authAdmin.php';
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
-include '/Applications/MAMP/htdocs/farmdata/design.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Admin/authAdmin.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
 
 $id=$_GET['id'];
 $origYear   = $_GET['year'];
@@ -61,7 +61,7 @@ echo "<form class='pure-form pure-form-aligned' name='form' method='post' action
 echo "<center><h2> Edit Distribution Record </h2></center>";
 echo "<div class='pure-control-group'>";
 echo "<label for='from'>Date:</label>";
-include '/Applications/MAMP/htdocs/farmdata/date.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/date.php';
 echo"</div>";
 
 echo '<div class="pure-control-group">';

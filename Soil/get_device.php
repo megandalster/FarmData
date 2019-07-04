@@ -1,5 +1,5 @@
 <?php
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 $fieldID = $_GET['fieldID'];
 $sqlCount = "select count(*) as num from pump_master, pump_field where pump_master.id=pump_field.id and ".
    "fieldID='".  $fieldID."'";

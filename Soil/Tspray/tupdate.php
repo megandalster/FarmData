@@ -1,5 +1,5 @@
 <?php
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 $farm = $_SESSION['db'];
 if ($farm == 'wahlst_spiralpath') {
     echo "<option value=4>4</option> \n";

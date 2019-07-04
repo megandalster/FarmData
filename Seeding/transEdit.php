@@ -21,10 +21,10 @@ if ($farm != 'dfarm') {
    }
 }
 
-include '/Applications/MAMP/htdocs/farmdata/authentication.php';
-include '/Applications/MAMP/htdocs/farmdata/design.php';
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
-include '/Applications/MAMP/htdocs/farmdata/stopSubmit.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/authentication.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/stopSubmit.php';
 
 $id = $_GET['id'];
 $origCrop = $_GET['transferredCrop'];
@@ -158,7 +158,7 @@ echo '</select></div>';
 echo '<div class="pure-control-group" id="lastharvdiv">';
 echo '</div>';
 
-include '/Applications/MAMP/htdocs/farmdata/Seeding/annual.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Seeding/annual.php';
 
 echo '<div class="pure-control-group" id="seedDateDiv">';
 echo "<label>Date Seeded:</label>";
@@ -213,7 +213,7 @@ echo "<label>Number of Trays:</label>";
 echo "<input type='text' class='textbox2' name='flats' id='flats' value='".$flats."'>";
 echo "</div>";
 
-include '/Applications/MAMP/htdocs/farmdata/Admin/Delete/getGen.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Admin/Delete/getGen.php';
 if ($_SESSION['labor']) {
    echo '<div class="pure-control-group">';
    echo "<label>Hours Worked:</label>";
@@ -259,7 +259,7 @@ if ($_POST['submit']) {
    $transYear = escapehtml($_POST['year']);
    $transMonth = escapehtml($_POST['month']);
    $transDay = escapehtml($_POST['day']);  
-   include '/Applications/MAMP/htdocs/farmdata/Seeding/setGen.php';
+   include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Seeding/setGen.php';
    $annual = escapehtml($_POST['annual']);
    if ($annual == 1) {
       $lastYear = $_POST['year'];

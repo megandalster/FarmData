@@ -1,5 +1,5 @@
 <?php
-include_once '/Applications/MAMP/htdocs/farmdata/connection.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 $crop = escapehtml($_GET['crop']);
 // should this be the transplant year rather than the current year???
 $sql = "SELECT distinct seedDate from gh_seeding  where crop = '".$crop.

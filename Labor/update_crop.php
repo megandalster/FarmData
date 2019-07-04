@@ -1,5 +1,5 @@
 <?php
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 $fieldID = escapehtml($_GET['fieldID']);
 if ($fieldID == "N/A") {
    $sql = "select crop from plant where active=1 order by crop";

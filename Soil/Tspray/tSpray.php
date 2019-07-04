@@ -1,7 +1,7 @@
 <?php session_start(); ?>
 <?php 
-include '/Applications/MAMP/htdocs/farmdata/design.php';
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 $farm = $_SESSION['db'];
 
 ?>
@@ -12,7 +12,7 @@ $farm = $_SESSION['db'];
 
 <div class="pure-control-group">
 <label for="date">Date:</label>
-<?php include '/Applications/MAMP/htdocs/farmdata/date.php'?>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/farmdata/date.php'?>
 </div>
 
 <div class="pure-control-group">
@@ -112,7 +112,7 @@ echo '</div>';
 echo '</div>';
 ?>
 <?php
-	include '/Applications/MAMP/htdocs/farmdata/Soil/Tspray/functions.php';
+	include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Soil/Tspray/functions.php';
 ?>
 </form>
 

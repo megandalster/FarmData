@@ -7,10 +7,10 @@
 <form class="pure-form pure-form-aligned" name='form' method='GET' action='harvestTable.php'>
 <input type="hidden" name="tab" value="harvest:harvestReport">
 <?php 
-include_once '/Applications/MAMP/htdocs/farmdata/connection.php';
-include '/Applications/MAMP/htdocs/farmdata/authentication.php';
-// include '/Applications/MAMP/htdocs/farmdata/testPureMenu.php';
-include '/Applications/MAMP/htdocs/farmdata/design.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/authentication.php';
+// include $_SERVER['DOCUMENT_ROOT'].'/farmdata/testPureMenu.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
 
 ?>
 
@@ -21,12 +21,12 @@ include '/Applications/MAMP/htdocs/farmdata/design.php';
 <div class='pure-control-group'>
 <?php 
 echo '<label for="from">From:</label> '; 
-include '/Applications/MAMP/htdocs/farmdata/date.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/date.php';
 // echo "<br clear=\"all\">";
 echo "</div>";
 echo "<div class='pure-control-group'>";
 echo '<label for="to"> To:</label> '; 
-include '/Applications/MAMP/htdocs/farmdata/date_transdate.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/date_transdate.php';
 ?>
 </div>
 <div class='pure-control-group'>

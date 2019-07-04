@@ -1,5 +1,5 @@
 <?php 
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 $material = escapehtml($_GET['material']);
 $sql="Select distinct unit from compost_unit where unit not in ".
    "(Select unit from compost_units where material='".$material."')";

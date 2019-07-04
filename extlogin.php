@@ -6,7 +6,7 @@ if($_SERVER["HTTPS"] != "on") {
 }
 */
 session_start();
-include '/Applications/MAMP/htdocs/farmdata/utilities.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/utilities.php';
 $useragent=$_SERVER['HTTP_USER_AGENT'];
 $_SESSION['mobile'] = isMobile($useragent);
 // $_SESSION['mobile'] = 1;

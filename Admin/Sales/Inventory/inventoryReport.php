@@ -1,8 +1,8 @@
 <?php session_start();?>
 <?php 
-include '/Applications/MAMP/htdocs/farmdata/Admin/authAdmin.php';
-include '/Applications/MAMP/htdocs/farmdata/design.php';
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Admin/authAdmin.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 ?>
 <form name='form' class = 'pure-form pure-form-aligned' method='GET' action='inventoryTable.php?tab=admin:admin_sales:inventory'>
 <input type='hidden' name='tab' value='admin:admin_sales:inventory'>

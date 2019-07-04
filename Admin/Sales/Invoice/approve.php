@@ -1,5 +1,5 @@
 <?php
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 $by = escapehtml($_GET['by']);
 $sql="update invoice_master set approved_by= '".$by."' where invoice_no='".$_GET['invoice'].
    "' and salesDate='".$_GET['salesDate']."'";

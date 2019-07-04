@@ -1,5 +1,5 @@
 <?php 
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 $user = escapehtml($_GET['user']);
 $sql="select admin, active from users where username='".$user."'";
 $result = $dbcon->query($sql);

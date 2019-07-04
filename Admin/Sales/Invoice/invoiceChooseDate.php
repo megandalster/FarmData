@@ -1,8 +1,8 @@
 <?php
 session_start();
-include_once '/Applications/MAMP/htdocs/farmdata/connection.php';
-include '/Applications/MAMP/htdocs/farmdata/Admin/authAdmin.php';
-include '/Applications/MAMP/htdocs/farmdata/design.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Admin/authAdmin.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
 ?>
 
 <form name='date' class = 'pure-form pure-form-aligned' method='POST' action="<?php $_PHP_SELF ?>">
@@ -48,11 +48,11 @@ if ($exist) {
 } else {
   echo '<label for="date">Invoice Date:</label>';
 }
-include '/Applications/MAMP/htdocs/farmdata/date.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/date.php';
 if ($exist) {
    echo '<br clear="all"/>';
    echo '<label for="date2">To:</label>';
-   include '/Applications/MAMP/htdocs/farmdata/date_transdate.php';
+   include $_SERVER['DOCUMENT_ROOT'].'/farmdata/date_transdate.php';
 }
 echo '<br clear="all"/>';
 echo '<br clear="all"/>';

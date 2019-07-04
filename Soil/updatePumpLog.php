@@ -1,5 +1,5 @@
 <?php
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 $month = $_GET['month'];
 $day    = $_GET['day'];
 $year    = $_GET['year'];

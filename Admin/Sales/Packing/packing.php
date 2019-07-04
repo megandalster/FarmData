@@ -1,10 +1,10 @@
 <?php session_start();
 echo "<html>";
-include '/Applications/MAMP/htdocs/farmdata/Admin/authAdmin.php';
-include_once '/Applications/MAMP/htdocs/farmdata/connection.php';
-include '/Applications/MAMP/htdocs/farmdata/design.php';
-include '/Applications/MAMP/htdocs/farmdata/stopSubmit.php';
-include '/Applications/MAMP/htdocs/farmdata/Admin/Sales/convert.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata//Applications/MAMP/htdocs/farmdata/Admin/authAdmin.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/farmdata//Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata//Applications/MAMP/htdocs/farmdata/design.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata//Applications/MAMP/htdocs/farmdata/stopSubmit.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata//Applications/MAMP/htdocs/farmdata/Admin/Sales/convert.php';
 // $sql = "select crop from plant where active = 1 union select product as crop from product";
 $sql = "select crop from (select crop from plant where active = 1 union ".
        "select product as crop from product where active = 1) as tmp order by crop";
@@ -329,7 +329,7 @@ while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
 <div class = 'pure-control-group'>
 <label>Packing Date:</label>
 <?php
-include '/Applications/MAMP/htdocs/farmdata/date.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata//Applications/MAMP/htdocs/farmdata/date.php';
 ?>
 </div>
 

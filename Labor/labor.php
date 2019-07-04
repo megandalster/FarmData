@@ -1,9 +1,9 @@
 <?php session_start();?>
 <?php
-include '/Applications/MAMP/htdocs/farmdata/authentication.php';
-include '/Applications/MAMP/htdocs/farmdata/design.php';
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
-include '/Applications/MAMP/htdocs/farmdata/stopSubmit.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/authentication.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/stopSubmit.php';
 ?>
 
 <center><h2> Input Labor Record</h2></center>
@@ -100,7 +100,7 @@ function show_confirm() {
 <div class = "pure-control-group">
 <label for="crop">Date of Labor:</label>
 <?php
-include '/Applications/MAMP/htdocs/farmdata/date.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/date.php';
 ?>
 </div>
 <div class = "pure-control-group">
@@ -281,7 +281,7 @@ while ($row1 = $result->fetch(PDO::FETCH_ASSOC)){
 </div>
 
 <?php
-include '/Applications/MAMP/htdocs/farmdata/timer.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/timer.php';
 ?>
 
 <div class = "pure-control-group">

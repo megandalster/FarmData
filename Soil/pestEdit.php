@@ -1,10 +1,10 @@
 <?php session_start();?>
 <?php
 $farm = $_SESSION['db'];
-include '/Applications/MAMP/htdocs/farmdata/Admin/authAdmin.php';
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
-include '/Applications/MAMP/htdocs/farmdata/design.php';
-include '/Applications/MAMP/htdocs/farmdata/Soil/clearForm.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Admin/authAdmin.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Soil/clearForm.php';
 
 $id=$_GET['id'];
 $origYear = $_GET['year'];
@@ -177,7 +177,7 @@ if ($_POST['submit']) {
       die();
    }
 
-   include '/Applications/MAMP/htdocs/farmdata/Soil/imageEdit.php';
+   include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Soil/imageEdit.php';
 
    if ($newfile != "") {
       $sql = "update pestScout set filename=";

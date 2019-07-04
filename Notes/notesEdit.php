@@ -17,11 +17,11 @@ if ($farm != 'dfarm') {
    }
 }
 
-include '/Applications/MAMP/htdocs/farmdata/authentication.php';
-include '/Applications/MAMP/htdocs/farmdata/design.php';
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
-include '/Applications/MAMP/htdocs/farmdata/stopSubmit.php';
-include '/Applications/MAMP/htdocs/farmdata/Soil/clearForm.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/authentication.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/stopSubmit.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Soil/clearForm.php';
 
 $id = $_GET['id'];
 $origYear = $_GET['year'];
@@ -150,7 +150,7 @@ if ($_POST['submit']) {
       die();
    }
 
-   include '/Applications/MAMP/htdocs/farmdata/Soil/imageEdit.php';
+   include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Soil/imageEdit.php';
 
    if ($newfile != "") {
       $sql = "update comments set filename=";

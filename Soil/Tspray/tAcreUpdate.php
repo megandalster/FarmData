@@ -1,5 +1,5 @@
 <?php
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 $sql="SELECT size*(".escapehtml($_GET['beds']).
    "/numberOfBeds) AS totalSpray FROM field_GH where fieldID='".
    escapehtml($_GET['field'])."'";

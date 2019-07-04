@@ -1,9 +1,9 @@
 <?php session_start(); ?>
 <?php
-include '/Applications/MAMP/htdocs/farmdata/authentication.php';
-include '/Applications/MAMP/htdocs/farmdata/design.php';
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
-include '/Applications/MAMP/htdocs/farmdata/stopSubmit.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/authentication.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/stopSubmit.php';
 ?>
 <center>
 <h2> Liquid Fertilizer Input </h2>
@@ -14,7 +14,7 @@ include '/Applications/MAMP/htdocs/farmdata/stopSubmit.php';
 <label for='date'> Fertilizer Application Date: </label>
 
 <?php
-include '/Applications/MAMP/htdocs/farmdata/date.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/date.php';
 ?>
 </div>
 
@@ -200,7 +200,7 @@ if ($_SESSION['labor']) {
    </select>
    </div> ';
 
-include '/Applications/MAMP/htdocs/farmdata/timer.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/timer.php';
 }
 ?>
 

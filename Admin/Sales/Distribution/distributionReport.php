@@ -5,9 +5,9 @@
    value='admin:admin_sales:distribution:distribution_report'>
 
 <?php
-include_once '/Applications/MAMP/htdocs/farmdata/connection.php';
-include '/Applications/MAMP/htdocs/farmdata/authentication.php';
-include '/Applications/MAMP/htdocs/farmdata/design.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/authentication.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
 ?>
 
 <center><h2>Distribution Report</h2></center>
@@ -15,12 +15,12 @@ include '/Applications/MAMP/htdocs/farmdata/design.php';
 <?php
 echo "<div class = 'pure-control-group'>";
 echo "<label for='from'>From:</label>";
-include '/Applications/MAMP/htdocs/farmdata/date.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/date.php';
 echo "</div>";
 
 echo "<div class = 'pure-control-group'>";
 echo "<label for='to'>To:</label>";
-include '/Applications/MAMP/htdocs/farmdata/date_transdate.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/date_transdate.php';
 echo "</div>";
 ?>
 

@@ -1,5 +1,5 @@
 <?php
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 
 $seedDate = escapehtml($_GET['seeddate']);
 $fieldID = escapehtml($_GET['fieldID']);

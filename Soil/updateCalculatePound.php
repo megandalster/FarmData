@@ -1,6 +1,6 @@
 <?php
 
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 $fieldID = escapehtml($_GET['fieldID']);
 $percent = escapehtml($_GET['percent']);
 $area=$dbcon->query("Select ('".$percent."'/'100')*(Select size from field_GH where fieldID='".

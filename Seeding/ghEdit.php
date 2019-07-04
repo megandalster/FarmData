@@ -21,10 +21,10 @@ if ($farm != 'dfarm') {
    }
 }
 
-include '/Applications/MAMP/htdocs/farmdata/authentication.php';
-include '/Applications/MAMP/htdocs/farmdata/design.php';
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
-include '/Applications/MAMP/htdocs/farmdata/stopSubmit.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/authentication.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/stopSubmit.php';
 
 $id = $_GET['id'];
 $origCrop = $_GET['crop'];
@@ -143,7 +143,7 @@ while ($row1 =  $result->fetch(PDO::FETCH_ASSOC)) {
 echo '</select>';
 echo '</div>';
 
-include '/Applications/MAMP/htdocs/farmdata/Admin/Delete/getGen.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Admin/Delete/getGen.php';
 
 echo '<div class="pure-control-group">';
 echo '<label>Comments:</label>';
@@ -173,7 +173,7 @@ if ($_POST['submit']) {
     $month = escapehtml($_POST['month']);
     $day = escapehtml($_POST['day']);
     $user = escapehtml($_POST['user']);
-    include '/Applications/MAMP/htdocs/farmdata/Seeding/setGen.php';
+    include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Seeding/setGen.php';
    
     $sql = "update gh_seeding set username='".$user."',crop='".$crop."', seedDate='".$year."-".
         $month."-".$day."', numseeds_planted=".$numseeds_planted.", comments='".$comSanitized."', 

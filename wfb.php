@@ -1,8 +1,8 @@
 <?php
 session_start();
 ob_start();
-include_once '/Applications/MAMP/htdocs/farmdata/connection.php';
-// include '/Applications/MAMP/htdocs/farmdata/Admin/authAdmin.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
+// include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Admin/authAdmin.php';
 $user = $_SESSION['dbuser'];
 if ($user == "guest" || $user == "") {
    die("Files access not authorized.");
@@ -1229,7 +1229,7 @@ ob_clean();
 // Common part of the page
 pageHeader();
 
-        include '/Applications/MAMP/htdocs/farmdata/design.php';
+        include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
 	echo "\n<style type=\"text/css\">";
 echo ".genericbutton {
 color: #000000;

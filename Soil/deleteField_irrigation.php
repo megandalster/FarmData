@@ -1,5 +1,5 @@
 <?php
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 $fieldID = $_GET['fieldID'];
 $sql 		= "delete from field_irrigation where fieldID='".$fieldID."'";
 try {

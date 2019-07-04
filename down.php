@@ -1,5 +1,5 @@
 <?php
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 header("Content-type: application/octet-stream");
 header("Content-disposition: attachment;filename=\"report.csv\"");
 try {

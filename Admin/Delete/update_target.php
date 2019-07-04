@@ -1,5 +1,5 @@
 <?php
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 $target = escapehtml($_GET['target']);
 
 $sql = "SELECT * from targets where targetName = '".$target."'";

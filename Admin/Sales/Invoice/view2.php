@@ -1,10 +1,10 @@
 <?php
 session_start();
-include '/Applications/MAMP/htdocs/farmdata/Admin/authAdmin.php';
-include '/Applications/MAMP/htdocs/farmdata/design.php';
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
-include 'Mail.php';
-include 'Mail/mime.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Admin/authAdmin.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Mail.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Mail/mime.php';
 
 if(isset($_GET['invoice'])){
    $invoiceID=$_GET['invoice'];
@@ -143,12 +143,12 @@ if(isset($_POST['submit'])){
    );
    $crlf = "\n";
    $mime = new Mail_mime($crlf);
-   $mime->setHTMLBody(file_get_contents('/Applications/MAMP/htdocs/farmdata/emailDesign.php').$str);
+   $mime->setHTMLBody(file_get_contents('emailDesign.php').$str);
    $body = $mime->get();
    $headers = $mime->headers($headers);
    $mail =& Mail::factory('mail');
    $mail->send($to, $headers, $body);
-   // mail($to,$subject,file_get_contents('/Applications/MAMP/htdocs/farmdata/emailDesign.php').$str,$headers);
+   // mail($to,$subject,file_get_contents('emailDesign.php').$str,$headers);
    echo '<script type="text/javascript">alert("Mail Sent!");</script>';
 }
 ?>

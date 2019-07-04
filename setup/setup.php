@@ -1,9 +1,9 @@
 <?php session_start(); ?>
 <?php
-include '/Applications/MAMP/htdocs/farmdata/Admin/authAdmin.php';
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
-include '/Applications/MAMP/htdocs/farmdata/utilities.php';
-include '/Applications/MAMP/htdocs/farmdata/stopSubmit.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Admin/authAdmin.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/utilities.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/stopSubmit.php';
 ?>
 
 <link type="text/css" href="/farmdata/tabs.css" rel = "stylesheet">
@@ -53,10 +53,10 @@ if (!isset($_POST['step'])) {
    echo '<input type="submit" class="submitbutton" name="skipfield" value="Skip">';
    echo '<br clear="all"/>';
    echo '<br clear="all"/>';
-   include '/Applications/MAMP/htdocs/farmdata/setup/addFieldInternal.php';
+   include $_SERVER['DOCUMENT_ROOT'].'/farmdata/setup/addFieldInternal.php';
 } else  if ($_POST['addfields']) {
    echo '<input type="hidden" name="step" value=3>';
-   include '/Applications/MAMP/htdocs/farmdata/setup/addFieldHandle.php';
+   include $_SERVER['DOCUMENT_ROOT'].'/farmdata/setup/addFieldHandle.php';
    echo '<input type="submit" class="submitbutton" name="cont1" value="Continue FARMDATA Setup">';
 } else if (isset($_POST['cont1']) || isset($_POST['skipfield'])) {
    echo '<input type="hidden" name="step" value=3>';
@@ -72,13 +72,13 @@ if (!isset($_POST['step'])) {
    echo '<input type="submit" class="submitbutton" name="skipunits" value="Skip">';
    echo '<br clear="all"/>';
    echo '<br clear="all"/>';
-   include '/Applications/MAMP/htdocs/farmdata/setup/editFile.php';
+   include $_SERVER['DOCUMENT_ROOT'].'/farmdata/setup/editFile.php';
 } else if (isset($_POST['addunits'])) {
    echo '<input type="hidden" name="step" value=2>';
    $table="extUnits";
    $cols = "unit";
    $upper = array(1);
-   include '/Applications/MAMP/htdocs/farmdata/setup/insertData.php';
+   include $_SERVER['DOCUMENT_ROOT'].'/farmdata/setup/insertData.php';
    echo '<input type="submit" class="submitbutton" name="cont2" value="Continue FARMDATA Setup">';
 } else if (isset($_POST['cont2']) || isset($_POST['skipunits'])) {
    echo "Step 4 of ".$numsteps;
@@ -102,13 +102,13 @@ if (!isset($_POST['step'])) {
    echo '<br clear="all"/>';
    echo '<br clear="all"/>';
    echo '<input type="hidden" name="step" value=2>';
-   include '/Applications/MAMP/htdocs/farmdata/setup/editPlant.php';
+   include $_SERVER['DOCUMENT_ROOT'].'/farmdata/setup/editPlant.php';
 } else if (isset($_POST['addplant'])) {
    echo '<input type="hidden" name="step" value=2>';
    $table="plant";
    $cols = "crop,units,units_per_case,dh_units";
    $upper = array(1,1,0,1);
-   include '/Applications/MAMP/htdocs/farmdata/setup/insertData.php';
+   include $_SERVER['DOCUMENT_ROOT'].'/farmdata/setup/insertData.php';
    echo '<br clear="all"/>';
    echo '<input type="submit" class="submitbutton" name="cont3" value="Continue FARMDATA Setup">';
 } else if (isset($_POST['cont3']) || isset($_POST['skipplant'])) {
@@ -121,10 +121,10 @@ if (!isset($_POST['step'])) {
    echo '<input type="submit" class="submitbutton" name="skipconv" value="Skip">';
    echo '<br clear="all"/>';
    echo '<br clear="all"/>';
-   include '/Applications/MAMP/htdocs/farmdata/setup/editUnits.php';
+   include $_SERVER['DOCUMENT_ROOT'].'/farmdata/setup/editUnits.php';
 } else if (isset($_POST['addunitsConv'])) {
    echo '<input type="hidden" name="step" value=2>';
-   include '/Applications/MAMP/htdocs/farmdata/setup/insertUnits.php';
+   include $_SERVER['DOCUMENT_ROOT'].'/farmdata/setup/insertUnits.php';
    echo '<br clear="all"/>';
    echo '<input type="submit" class="submitbutton" name="cont4" value="Continue FARMDATA Setup">';
 } else if (isset($_POST['cont4']) || isset($_POST['skipconv'])) {
@@ -141,13 +141,13 @@ if (!isset($_POST['step'])) {
    echo '<input type="submit" class="submitbutton" name="skipcover" value="Skip">';
    echo '<br clear="all"/>';
    echo '<br clear="all"/>';
-   include '/Applications/MAMP/htdocs/farmdata/setup/editFile.php';
+   include $_SERVER['DOCUMENT_ROOT'].'/farmdata/setup/editFile.php';
 } else if (isset($_POST['addcoverCrop'])) {
    echo '<input type="hidden" name="step" value=2>';
    $table="coverCrop";
    $cols = "crop,drillRateMin,drillRateMax,brcstRateMin,brcstRateMax,legume";
    $upper = array(1,0,0,0,0,0);
-   include '/Applications/MAMP/htdocs/farmdata/setup/insertData.php';
+   include $_SERVER['DOCUMENT_ROOT'].'/farmdata/setup/insertData.php';
    echo '<br clear="all"/>';
    echo '<input type="submit" class="submitbutton" name="cont5" value="Continue FARMDATA Setup">';
 } else if (isset($_POST['cont5']) || isset($_POST['skipcover'])) {
@@ -164,13 +164,13 @@ if (!isset($_POST['step'])) {
    echo '<input type="submit" class="submitbutton" name="skiptools" value="Skip">';
    echo '<br clear="all"/>';
    echo '<br clear="all"/>';
-   include '/Applications/MAMP/htdocs/farmdata/setup/editFile.php';
+   include $_SERVER['DOCUMENT_ROOT'].'/farmdata/setup/editFile.php';
 } else if (isset($_POST['addtools'])) {
    echo '<input type="hidden" name="step" value=2>';
    $table="tools";
    $cols = "tool_name, type";
    $upper = array(1,1);
-   include '/Applications/MAMP/htdocs/farmdata/setup/insertData.php';
+   include $_SERVER['DOCUMENT_ROOT'].'/farmdata/setup/insertData.php';
    echo '<input type="submit" class="submitbutton" name="cont6" value="Continue FARMDATA Setup">';
 } else if (isset($_POST['cont6']) || isset($_POST['skiptools'])) {
    echo '<input type="hidden" name="step" value=3>';
@@ -189,13 +189,13 @@ if (!isset($_POST['step'])) {
    echo '<input type="submit" class="submitbutton" name="skipspraymats" value="Skip to Final Configuration">';
    echo '<br clear="all"/>';
    echo '<br clear="all"/>';
-   include '/Applications/MAMP/htdocs/farmdata/setup/editFile.php';
+   include $_SERVER['DOCUMENT_ROOT'].'/farmdata/setup/editFile.php';
 } else if (isset($_POST['addsprayMaterials'])) {
    echo '<input type="hidden" name="step" value=2>';
    $table="tSprayMaterials";
    $cols = "sprayMaterial,TRateUnits,TRateMin,TRateMax,TRateDefault,BRateUnits,BRateMin,BRateMax,BRateDefault,REI_HRS,PPE";
    $upper = array(1,1,0,0,0,1,0,0,0,0,0);
-   include '/Applications/MAMP/htdocs/farmdata/setup/insertData.php';
+   include $_SERVER['DOCUMENT_ROOT'].'/farmdata/setup/insertData.php';
    echo '<input type="submit" class="submitbutton" name="cont7" value="Finish FARMDATA Setup">';
 } else if (isset($_POST['cont7']) || isset($_POST['skipspraymats'])) {
    // header("Location: ../Admin/Config/config.php?tab=admin:admin_config:config");

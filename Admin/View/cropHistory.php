@@ -3,9 +3,9 @@
 <form name = 'form' class = 'pure-form pure-form-aligned' method = 'GET' action = 'cropMasterTable.php'>
 <input type = "hidden" name = "tab" value = "admin:admin_view:view_tables:view_history">
 <?php
-include_once '/Applications/MAMP/htdocs/farmdata/connection.php';
-include '/Applications/MAMP/htdocs/farmdata/Admin/authAdmin.php';
-include '/Applications/MAMP/htdocs/farmdata/design.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Admin/authAdmin.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
 
 echo '<center><h2>Select Year Range And A Field</h2></center>';
 echo '<div class = "pure-control-group">';

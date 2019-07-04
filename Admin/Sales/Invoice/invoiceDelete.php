@@ -1,5 +1,5 @@
 <?php
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 $delete="delete from invoice_entry where invoice_no='".$_GET['invoice']."'";
 try {
    $stmt = $dbcon->prepare($delete);

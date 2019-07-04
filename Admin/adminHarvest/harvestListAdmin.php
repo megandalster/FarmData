@@ -1,8 +1,8 @@
 <?php session_start(); ?>
 <?php
-include '/Applications/MAMP/htdocs/farmdata/Admin/authAdmin.php';
-include '/Applications/MAMP/htdocs/farmdata/design.php';
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Admin/authAdmin.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 $farm = $_SESSION['db'];
 $year=$_GET['year'];
 $month=$_GET['month'];
@@ -11,7 +11,7 @@ $detail=$_GET['detail'];
 $date=$year."-".$month."-".$day;
 $deleteCrop=escapehtml($_GET['crop']);
 $currentID = $_GET['currentID'];
-include '/Applications/MAMP/htdocs/farmdata/Admin/Sales/convert.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Admin/Sales/convert.php';
 
 if ($ind = array_search('Loss', $targs)) {
   unset($targs[$ind]);

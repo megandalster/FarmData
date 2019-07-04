@@ -1,21 +1,21 @@
 <?php session_start(); 
-include '/Applications/MAMP/htdocs/farmdata/Admin/authAdmin.php';
-include '/Applications/MAMP/htdocs/farmdata/design.php';
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Admin/authAdmin.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 ?>
 <form name='form' class = 'pure-form pure-form-aligned' method='POST' action="<?php $_PHP_SELF ?>">
 <center><h2> Invoice/Sales Report </h2></center>
 <div class = 'pure-control-group'>
 <label for="form">From:</label>
 <?php
-include '/Applications/MAMP/htdocs/farmdata/date.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/date.php';
 ?>
 </div>
 
 <div class = 'pure-control-group'>
 <label for="to">To:</label>
 <?php
-include '/Applications/MAMP/htdocs/farmdata/date_transdate.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/date_transdate.php';
 ?>
 </div>
 

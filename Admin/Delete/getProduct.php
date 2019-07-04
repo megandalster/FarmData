@@ -1,5 +1,5 @@
 <?php
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 $product = escapehtml($_GET['product']);
 $sql = "select unit, units_per_case, dh_units, active from product where product='".$product."'";
 $result = $dbcon->query($sql);

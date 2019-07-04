@@ -1,10 +1,10 @@
 <?php session_start();?>
 <!DOCTYPE html>
 <?php
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
-include '/Applications/MAMP/htdocs/farmdata/authentication.php';
-include '/Applications/MAMP/htdocs/farmdata/design.php';
-include '/Applications/MAMP/htdocs/farmdata/stopSubmit.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/authentication.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/stopSubmit.php';
 ?>
 
 <div class="layout">
@@ -81,7 +81,7 @@ if ($_SESSION['seed_order']) {
    con = con+"Rows/Bed: "+ r + "<br>";
 
 <?php
-  include '/Applications/MAMP/htdocs/farmdata/Seeding/checkGen.php';
+  include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Seeding/checkGen.php';
   if ($_SESSION['labor']) {
      echo '
         var wk = document.getElementById("numW").value;
@@ -123,7 +123,7 @@ if (isset($_POST['day']) && isset($_POST['month']) && isset($_POST['year'])) {
 if (isset($_POST['fieldID'])) {
    $field = escapehtml($_POST['fieldID']);
 }
-include '/Applications/MAMP/htdocs/farmdata/date.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/date.php';
 ?>
 </div>
 
@@ -176,7 +176,7 @@ while ($row = $res->fetch(PDO::FETCH_ASSOC)) {
 </div>
 
 <?php
-include '/Applications/MAMP/htdocs/farmdata/Seeding/annual.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Seeding/annual.php';
 ?>
 
 <script type="text/javascript">
@@ -324,7 +324,7 @@ while ($cons<10) {
 </div>
 
 <?php
-include '/Applications/MAMP/htdocs/farmdata/Seeding/getGen.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Seeding/getGen.php';
 if ($_SESSION['labor']) {
 echo '
 <div class="pure-control-group">
@@ -342,7 +342,7 @@ echo '
 </select>
 </div> ';
 
-include '/Applications/MAMP/htdocs/farmdata/timer.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/timer.php';
 }
 ?>
 
@@ -416,7 +416,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
    } 
 
    $comSanitized=escapehtml($_POST['comments']);
-   include '/Applications/MAMP/htdocs/farmdata/Seeding/setGen.php';
+   include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Seeding/setGen.php';
 
    if ($_SESSION['seed_order']) {
       $sql = "select seedsGram, seedsRowFt from seedInfo where crop = '".$crop."'";

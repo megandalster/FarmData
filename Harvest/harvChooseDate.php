@@ -1,8 +1,8 @@
 <php session_start(); ?>
 <?php
-include '/Applications/MAMP/htdocs/farmdata/authentication.php';
-include '/Applications/MAMP/htdocs/farmdata/design.php';
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/authentication.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 ?>
 
 <form name='date' class='pure-form pure-form-aligned' method='POST'>
@@ -12,7 +12,7 @@ echo '<h2>Choose Harvest List Date</h2>';
  echo '</center>';
 echo '<div class="pure-control-group">';
 echo '<label>Date:</label>';
-include '/Applications/MAMP/htdocs/farmdata/date.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/date.php';
 echo "</div>";
 ?>
 <br clear="all"/>

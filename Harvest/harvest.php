@@ -3,9 +3,9 @@
 //if ($_SESSION['mobile']) {
     echo "<html>";
 //}
-include '/Applications/MAMP/htdocs/farmdata/design.php';
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
-include '/Applications/MAMP/htdocs/farmdata/stopSubmit.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/stopSubmit.php';
 $currentCrop=$_GET['crop'];
 $currentDate=$_GET['date'];
 $dateArray = explode("-", $currentDate);
@@ -65,7 +65,7 @@ function show_confirm() {
       }
       con=con+"Unit: "+ unit + "<br>";
    <?php
-   //include '/Applications/MAMP/htdocs/farmdata/Seeding/checkGen.php';
+   //include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Seeding/checkGen.php';
    if ($_SESSION['gens']) {
       echo 'var gen = document.getElementById("gen" +j).value;';
       echo 'con += "Succession #: " + gen + "<br>";';
@@ -108,7 +108,7 @@ function show_confirm() {
 <label class='input_label' for="crop">Date of Harvest:</label>
 <?php
 // if (!$_SESSION['mobile']) echo "<br clear='all'>";
-include '/Applications/MAMP/htdocs/farmdata/date.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/date.php';
 ?>
 </div>
 <div class='pure-control-group'>
@@ -446,7 +446,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
          $totalHours=0;
       }
 
-//      include '/Applications/MAMP/htdocs/farmdata/Seeding/setGen.php';
+//      include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Seeding/setGen.php';
       if ($_SESSION['gens']) {
          $gen = $_POST['gen'.$j];
       } else {

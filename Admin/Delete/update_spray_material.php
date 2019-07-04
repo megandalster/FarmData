@@ -1,5 +1,5 @@
 <?php
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 $spraymaterial = escapehtml($_GET['spraymaterial']);
 
 $sql = "SELECT * from tSprayMaterials WHERE sprayMaterial='".$spraymaterial."'";

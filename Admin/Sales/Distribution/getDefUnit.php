@@ -1,5 +1,5 @@
 <?php
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 $crop = escapehtml($_GET['crop']);
 $sql="select distinct units from plant where crop='".$crop."' union ".
      "select distinct unit from product where product='".$crop."'";

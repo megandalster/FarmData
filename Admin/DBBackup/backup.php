@@ -1,9 +1,9 @@
 <?php session_start(); ?>
 <?php
-include '/Applications/MAMP/htdocs/farmdata/Admin/authAdmin.php';
-include '/Applications/MAMP/htdocs/farmdata/design.php';
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
-include '/Applications/MAMP/htdocs/farmdata/stopSubmit.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Admin/authAdmin.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/stopSubmit.php';
 $farm=$_SESSION['db'];
 $date = date('Y-m-d-H-i-s');
 $file=$farm."-".$date.".sql";
@@ -31,7 +31,7 @@ is needed.
 if (!empty($_POST['done'])) {
   $user = $_SESSION['dbuser'];
   $pass = $_SESSION['dbpass'];
-  $file = '/Applications/MAMP/htdocs/farmdata/files/'.$farm.'/'.$_POST['filename'];
+  $file = 'files/'.$farm.'/'.$_POST['filename'];
   $command = "mysqldump -u ".$user." -p".$pass." ".$farm." > ".$file." 2>&1";
 
   exec($command, $out, $err);

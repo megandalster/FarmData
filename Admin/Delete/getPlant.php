@@ -1,5 +1,5 @@
 <?php
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 $crop = escapehtml($_GET['crop']);
 $sql = "select units, units_per_case, dh_units, active from plant where crop='".$crop."'";
 $result = $dbcon->query($sql);

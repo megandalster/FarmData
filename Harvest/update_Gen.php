@@ -1,5 +1,5 @@
 <?php
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 
 $crop = escapehtml($_GET['crop']);
 $fld = escapehtml($_GET['fieldID']);

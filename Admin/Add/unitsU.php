@@ -1,5 +1,5 @@
 <?php 
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 $crop = escapehtml($_GET['crop']);
 $sql="Select distinct unit from extUnits where unit not in (Select unit from units where crop='".$crop."')";
 $result=$dbcon->query($sql);

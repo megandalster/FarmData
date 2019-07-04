@@ -19,9 +19,9 @@ function getUnit(){
 </script>
 
 <?php
-include '/Applications/MAMP/htdocs/farmdata/Admin/authAdmin.php';
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
-include '/Applications/MAMP/htdocs/farmdata/design.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata//Applications/MAMP/htdocs/farmdata/Admin/authAdmin.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata//Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata//Applications/MAMP/htdocs/farmdata/design.php';
 
 $id=$_GET['id'];
 $origYear   = $_GET['year'];
@@ -66,7 +66,7 @@ echo '</div>';
 echo '<br clear="all"/>';
 echo "<div class='pure-control-group'>";
 echo "<label for='from'>Date:</label>";
-include '/Applications/MAMP/htdocs/farmdata/date.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata//Applications/MAMP/htdocs/farmdata/date.php';
 echo"</div>";
 
 echo '<div class="pure-control-group">';

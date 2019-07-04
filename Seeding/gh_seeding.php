@@ -1,9 +1,9 @@
 <?php session_start();?>
 <?php
-include '/Applications/MAMP/htdocs/farmdata/authentication.php';
-include '/Applications/MAMP/htdocs/farmdata/design.php';
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
-include '/Applications/MAMP/htdocs/farmdata/stopSubmit.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/authentication.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/stopSubmit.php';
 ?>
 
 <center>
@@ -26,7 +26,7 @@ if (isset($_POST['day']) && isset($_POST['month']) && isset($_POST['year'])) {
    $dYear = $_POST['year'];
 }
 echo '<label for="Seed">Date of Seeding:</label>';
-include '/Applications/MAMP/htdocs/farmdata/date.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/date.php';
 echo "</div>";
 ?>
 <?php
@@ -34,7 +34,7 @@ $laborc = false;
 $harvesting = false;
 $transplanting = false;
 // assumes onload not called from this file
-include '/Applications/MAMP/htdocs/farmdata/chooseCrop.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/chooseCrop.php';
 ?>
 <input type="hidden" name="numRows" id="numRows" value=0>
 
@@ -166,7 +166,7 @@ if (!$_SESSION['seed_order']) {
    //echo '</div>';
 }
 echo '<p>';
-include '/Applications/MAMP/htdocs/farmdata/Seeding/getGen.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Seeding/getGen.php';
 ?>
 <div class='pure-control-group'>
 <label for="comments">Comments:</label>
@@ -210,7 +210,7 @@ function show_confirm() {
    }
    con += "Number of Seeds: "+ ns + "<br>";
    <?php
-   include '/Applications/MAMP/htdocs/farmdata/Seeding/checkGen.php';
+   include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Seeding/checkGen.php';
    ?>
 /*
    var ret = confirm("Confirm Entry:"+"<br>"+con);       
@@ -287,7 +287,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
    } else {
       $varsSanitized=escapehtml($_POST['vars']);
    }
-   include '/Applications/MAMP/htdocs/farmdata/Seeding/setGen.php';
+   include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Seeding/setGen.php';
    $seeds = escapehtml($_POST['num_seeds']);
    $numFlats = escapehtml($_POST['numFlats']);
    $flatSize = escapehtml($_POST['flatSize']);

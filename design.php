@@ -34,7 +34,7 @@ if($_SERVER["HTTPS"] != "on") {
 */
 $farm = $_SESSION['db'];
 date_default_timezone_set('America/New_York');
-include '/Applications/MAMP/htdocs/farmdata/utilities.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/utilities.php';
 
 echo '<link rel="stylesheet" href="/farmdata/pure-release-0.5.0/pure-min.css">';
 if ($_SESSION['mobile']) {
@@ -42,7 +42,7 @@ if ($_SESSION['mobile']) {
 //	echo "<meta name='viewport' content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1'>";
   echo "<meta name='viewport' content='width=device-width, initial-scale=1.0'>";
 	//echo "<meta name='viewport' content='width=device-width, initial-scale=0.3, minimum-scale=0.3, maximum-scale=1'>";
-	include '/Applications/MAMP/htdocs/farmdata/header.php';
+	include $_SERVER['DOCUMENT_ROOT'].'/farmdata/header.php';
 	echo '<link type="text/css" href="/farmdata/mobileTabs.css" rel = "stylesheet">';
 //   echo '<link type="text/css" href="/farmdata/tabs.css" rel="stylesheet">';
  /*
@@ -171,22 +171,22 @@ echo "</script>";
 <?php
 // Include appropriate tab
 if ($tab=='harvest') {
-   include '/Applications/MAMP/htdocs/farmdata/hartab.php';
+   include $_SERVER['DOCUMENT_ROOT'].'/farmdata/hartab.php';
 	if ($_SESSION['mobile']) echo "<div style='padding-bottom:120px'></div>";
 } else if ($tab=='seeding') {
-   include '/Applications/MAMP/htdocs/farmdata/seedtab.php';
+   include $_SERVER['DOCUMENT_ROOT'].'/farmdata/seedtab.php';
 	if ($_SESSION['mobile']) echo "<div style='padding-bottom:90px'></div>";
 } else if ($tab=='soil') {
-	include '/Applications/MAMP/htdocs/farmdata/soiltab.php';
+	include $_SERVER['DOCUMENT_ROOT'].'/farmdata/soiltab.php';
 	if ($_SESSION['mobile']) echo "<div style='padding-bottom:70px'></div>";
 } else if ($tab=='notes') {
-	include '/Applications/MAMP/htdocs/farmdata/notetab.php';
+	include $_SERVER['DOCUMENT_ROOT'].'/farmdata/notetab.php';
 	if ($_SESSION['mobile']) echo "<div style='padding-bottom:20px'></div>";
 } else if ($tab=='labor') {
-	include '/Applications/MAMP/htdocs/farmdata/labortab.php';
+	include $_SERVER['DOCUMENT_ROOT'].'/farmdata/labortab.php';
 	if ($_SESSION['mobile']) echo "<div style='padding-bottom:30px'></div>";
 } else if ($tab=='admin') {
-	include '/Applications/MAMP/htdocs/farmdata/admintab.php';
+	include $_SERVER['DOCUMENT_ROOT'].'/farmdata/admintab.php';
 	if ($_SESSION['mobile']) echo "<div style='padding-bottom:0px'></div>";
 }
 ?>

@@ -1,5 +1,5 @@
 <?php
-include '/Applications/MAMP/htdocs/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
 $sql = "Select BRateUnits as unit from tSprayMaterials where sprayMaterial = '".
    escapehtml($_GET['material'])."' ";
 $result = $dbcon->query($sql);
