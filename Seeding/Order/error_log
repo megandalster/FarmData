@@ -1,0 +1,39 @@
+[18-Aug-2019 21:53:58 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[18-Aug-2019 17:53:58 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[18-Aug-2019 21:54:09 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[18-Aug-2019 17:54:09 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[19-Aug-2019 18:47:51 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[19-Aug-2019 14:47:51 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[19-Aug-2019 18:47:59 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[19-Aug-2019 14:47:59 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[05-Nov-2020 18:04:54 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/Admin/authAdmin.php on line 2
+[05-Nov-2020 18:04:54 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[05-Nov-2020 18:04:54 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[05-Nov-2020 18:05:13 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/Admin/authAdmin.php on line 2
+[05-Nov-2020 18:05:13 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[05-Nov-2020 18:05:13 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[05-Nov-2020 13:05:13 America/New_York] PHP Notice:  Undefined variable: rowftToPlant in /home/rp7uf2c14b5e/public_html/farmdata/Seeding/Order/updateSeed.php on line 135
+[05-Nov-2020 18:05:20 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/Admin/authAdmin.php on line 2
+[05-Nov-2020 18:05:20 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[05-Nov-2020 18:05:20 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[05-Nov-2020 18:05:27 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/Admin/authAdmin.php on line 2
+[05-Nov-2020 18:05:27 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[05-Nov-2020 18:05:27 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[05-Nov-2020 13:05:27 America/New_York] PHP Notice:  Undefined variable: rowftToPlant in /home/rp7uf2c14b5e/public_html/farmdata/Seeding/Order/updateSeed.php on line 135
+[05-Nov-2020 18:06:34 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/Admin/authAdmin.php on line 2
+[05-Nov-2020 18:06:34 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[05-Nov-2020 18:06:35 UTC] PHP Notice:  Undefined variable: cover in /home/rp7uf2c14b5e/public_html/farmdata/Seeding/Order/insertSeedInfo.php on line 197
+[05-Nov-2020 18:06:35 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/Admin/authAdmin.php on line 2
+[05-Nov-2020 18:06:35 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[05-Nov-2020 18:06:35 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[10-Nov-2020 18:27:22 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[10-Nov-2020 13:27:22 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[10-Nov-2020 18:27:47 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[10-Nov-2020 13:27:47 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[15-Nov-2020 20:54:57 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/Admin/authAdmin.php on line 2
+[15-Nov-2020 20:54:57 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[15-Nov-2020 20:54:57 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[15-Nov-2020 20:55:00 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[15-Nov-2020 15:55:00 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[15-Nov-2020 20:55:28 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[15-Nov-2020 15:55:28 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2

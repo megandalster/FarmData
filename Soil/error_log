@@ -1,0 +1,1056 @@
+[16-Jul-2019 15:19:59 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[16-Jul-2019 15:19:59 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[16-Jul-2019 11:19:59 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[16-Jul-2019 11:19:59 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[16-Jul-2019 11:19:59 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[16-Jul-2019 15:20:19 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[16-Jul-2019 15:20:19 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[16-Jul-2019 15:21:37 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[16-Jul-2019 15:21:37 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[18-Jul-2019 14:11:20 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[18-Jul-2019 10:11:20 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[18-Jul-2019 10:11:20 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[18-Jul-2019 10:11:20 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[18-Jul-2019 10:11:20 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[18-Jul-2019 10:11:20 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'animaldb.field_GH' doesn't exist in /home/rp7uf2c14b5e/public_html/farmdata/fieldID.php:7
+Stack trace:
+#0 /home/rp7uf2c14b5e/public_html/farmdata/fieldID.php(7): PDO->query('SELECT distinct...')
+#1 /home/rp7uf2c14b5e/public_html/farmdata/Soil/weedReport.php(29): include('/home/rp7uf2c14...')
+#2 {main}
+  thrown in /home/rp7uf2c14b5e/public_html/farmdata/fieldID.php on line 7
+[18-Jul-2019 14:11:39 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[18-Jul-2019 14:11:39 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[18-Jul-2019 10:11:39 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[18-Jul-2019 10:11:39 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[18-Jul-2019 10:11:39 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[18-Jul-2019 10:11:39 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'animaldb.tSprayMaterials' doesn't exist in /home/rp7uf2c14b5e/public_html/farmdata/Soil/sprayReport.php:51
+Stack trace:
+#0 /home/rp7uf2c14b5e/public_html/farmdata/Soil/sprayReport.php(51): PDO->query('SELECT distinct...')
+#1 {main}
+  thrown in /home/rp7uf2c14b5e/public_html/farmdata/Soil/sprayReport.php on line 51
+[18-Jul-2019 20:44:41 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 16:44:41 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[18-Jul-2019 20:45:10 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[18-Jul-2019 16:45:10 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[18-Jul-2019 16:45:10 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[18-Jul-2019 16:45:10 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[18-Jul-2019 16:45:10 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[18-Jul-2019 20:45:26 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[18-Jul-2019 16:45:26 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[18-Jul-2019 20:45:42 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[18-Jul-2019 16:45:42 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[18-Jul-2019 16:45:42 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[18-Jul-2019 16:45:42 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[18-Jul-2019 16:45:42 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[18-Jul-2019 20:45:56 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[18-Jul-2019 16:45:56 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[22-Jul-2019 22:27:39 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[22-Jul-2019 18:27:39 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[22-Jul-2019 18:27:39 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[22-Jul-2019 18:27:39 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[22-Jul-2019 18:27:39 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[22-Jul-2019 22:27:49 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[22-Jul-2019 18:27:49 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[22-Jul-2019 22:28:02 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[22-Jul-2019 22:28:02 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[22-Jul-2019 18:28:02 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[22-Jul-2019 18:28:02 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[22-Jul-2019 18:28:02 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[22-Jul-2019 22:28:14 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[22-Jul-2019 22:28:14 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[22-Jul-2019 18:28:14 America/New_York] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 67
+[22-Jul-2019 18:28:14 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[22-Jul-2019 18:28:14 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[22-Jul-2019 18:28:14 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[22-Jul-2019 18:28:14 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[22-Jul-2019 18:28:14 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[22-Jul-2019 18:28:14 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[22-Jul-2019 18:28:14 America/New_York] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 67
+[22-Jul-2019 18:28:14 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[22-Jul-2019 18:28:14 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[22-Jul-2019 18:28:14 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[22-Jul-2019 18:28:14 America/New_York] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 67
+[22-Jul-2019 18:28:14 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[22-Jul-2019 18:28:14 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[22-Jul-2019 18:28:14 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[22-Jul-2019 18:28:14 America/New_York] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 67
+[22-Jul-2019 18:28:14 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[22-Jul-2019 18:28:14 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[22-Jul-2019 18:28:14 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[22-Jul-2019 18:28:14 America/New_York] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 67
+[22-Jul-2019 18:28:14 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[22-Jul-2019 18:28:14 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[22-Jul-2019 18:28:14 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[22-Jul-2019 18:28:14 America/New_York] PHP Notice:  Use of undefined constant totalSeeded - assumed 'totalSeeded' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 107
+[22-Jul-2019 18:28:14 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 114
+[22-Jul-2019 18:28:14 America/New_York] PHP Notice:  Use of undefined constant total - assumed 'total' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 115
+[22-Jul-2019 18:28:14 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 114
+[22-Jul-2019 18:28:14 America/New_York] PHP Notice:  Use of undefined constant total - assumed 'total' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 115
+[22-Jul-2019 18:28:14 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 114
+[22-Jul-2019 18:28:14 America/New_York] PHP Notice:  Use of undefined constant total - assumed 'total' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 115
+[22-Jul-2019 18:28:14 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 114
+[22-Jul-2019 18:28:14 America/New_York] PHP Notice:  Use of undefined constant total - assumed 'total' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 115
+[23-Jul-2019 00:09:06 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[23-Jul-2019 00:09:06 UTC] PHP Notice:  Undefined index: dbuser in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 5
+[23-Jul-2019 00:09:06 UTC] PHP Notice:  Undefined index: dbpass in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 6
+[23-Jul-2019 00:09:06 UTC] PHP Notice:  Undefined index: db in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 7
+[23-Jul-2019 00:36:53 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[23-Jul-2019 00:36:53 UTC] PHP Notice:  Undefined index: dbuser in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 5
+[23-Jul-2019 00:36:53 UTC] PHP Notice:  Undefined index: dbpass in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 6
+[23-Jul-2019 00:36:53 UTC] PHP Notice:  Undefined index: db in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 7
+[16-Aug-2019 17:49:05 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[16-Aug-2019 17:49:05 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[16-Aug-2019 13:49:05 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[16-Aug-2019 13:49:05 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[16-Aug-2019 13:49:05 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[16-Aug-2019 17:52:30 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[16-Aug-2019 17:52:30 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[16-Aug-2019 13:52:30 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[16-Aug-2019 13:52:30 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[16-Aug-2019 13:52:30 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[16-Aug-2019 17:53:54 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[16-Aug-2019 17:53:54 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[16-Aug-2019 13:53:54 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[16-Aug-2019 13:53:54 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[16-Aug-2019 13:53:54 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[16-Aug-2019 17:55:35 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[16-Aug-2019 17:55:35 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[16-Aug-2019 13:55:35 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[16-Aug-2019 13:55:35 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[16-Aug-2019 13:55:35 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[16-Aug-2019 17:55:47 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[16-Aug-2019 13:55:47 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[16-Aug-2019 13:55:47 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[16-Aug-2019 13:55:47 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[16-Aug-2019 13:55:47 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[16-Aug-2019 17:55:52 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[16-Aug-2019 13:55:52 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[16-Aug-2019 17:57:12 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[16-Aug-2019 13:57:12 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[16-Aug-2019 13:57:12 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[16-Aug-2019 13:57:12 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[16-Aug-2019 13:57:12 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[16-Aug-2019 17:57:24 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[16-Aug-2019 13:57:24 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[16-Aug-2019 17:58:25 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[16-Aug-2019 13:58:25 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[16-Aug-2019 13:58:25 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[16-Aug-2019 13:58:25 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[16-Aug-2019 13:58:25 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[16-Aug-2019 17:58:34 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[16-Aug-2019 13:58:34 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[16-Aug-2019 17:59:49 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[16-Aug-2019 13:59:49 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[16-Aug-2019 13:59:49 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[16-Aug-2019 13:59:49 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[16-Aug-2019 13:59:49 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[16-Aug-2019 17:59:58 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[16-Aug-2019 13:59:58 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[16-Aug-2019 18:00:08 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[16-Aug-2019 14:00:08 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[16-Aug-2019 14:00:08 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[16-Aug-2019 14:00:08 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[16-Aug-2019 14:00:08 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[16-Aug-2019 18:00:19 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[16-Aug-2019 14:00:19 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[16-Aug-2019 18:00:46 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[16-Aug-2019 14:00:46 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[16-Aug-2019 14:00:46 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[16-Aug-2019 14:00:46 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[16-Aug-2019 14:00:46 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[16-Aug-2019 18:00:59 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[16-Aug-2019 14:00:59 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[16-Aug-2019 18:01:17 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[16-Aug-2019 18:01:17 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[16-Aug-2019 14:01:17 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[16-Aug-2019 14:01:17 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[16-Aug-2019 14:01:17 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[16-Aug-2019 18:01:26 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[16-Aug-2019 18:01:26 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[16-Aug-2019 14:01:26 America/New_York] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 67
+[16-Aug-2019 14:01:26 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:01:26 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:01:26 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:01:26 America/New_York] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 67
+[16-Aug-2019 14:01:26 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:01:26 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:01:26 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:01:26 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:01:26 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:01:26 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:01:26 America/New_York] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 67
+[16-Aug-2019 14:01:26 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:01:26 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:01:26 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:01:26 America/New_York] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 67
+[16-Aug-2019 14:01:26 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:01:26 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:01:26 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:01:26 America/New_York] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 67
+[16-Aug-2019 14:01:26 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:01:26 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:01:26 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:01:26 America/New_York] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 67
+[16-Aug-2019 14:01:26 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:01:26 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:01:26 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:01:26 America/New_York] PHP Notice:  Use of undefined constant totalSeeded - assumed 'totalSeeded' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 107
+[16-Aug-2019 14:01:26 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 114
+[16-Aug-2019 14:01:26 America/New_York] PHP Notice:  Use of undefined constant total - assumed 'total' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 115
+[16-Aug-2019 14:01:26 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 114
+[16-Aug-2019 14:01:26 America/New_York] PHP Notice:  Use of undefined constant total - assumed 'total' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 115
+[16-Aug-2019 14:01:26 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 114
+[16-Aug-2019 14:01:26 America/New_York] PHP Notice:  Use of undefined constant total - assumed 'total' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 115
+[16-Aug-2019 14:01:26 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 114
+[16-Aug-2019 14:01:26 America/New_York] PHP Notice:  Use of undefined constant total - assumed 'total' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 115
+[16-Aug-2019 18:02:19 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[16-Aug-2019 18:02:19 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[16-Aug-2019 14:02:19 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[16-Aug-2019 14:02:19 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[16-Aug-2019 14:02:19 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[16-Aug-2019 18:02:45 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[16-Aug-2019 18:02:45 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[16-Aug-2019 14:02:45 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[16-Aug-2019 14:02:45 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[16-Aug-2019 14:02:45 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[16-Aug-2019 18:02:53 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[16-Aug-2019 18:02:53 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 67
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 67
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 67
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 67
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 67
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 67
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 67
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 67
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 67
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 67
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 67
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 67
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 67
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 67
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 67
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 67
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 67
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 67
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant totalSeeded - assumed 'totalSeeded' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 107
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 114
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant total - assumed 'total' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 115
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 114
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant total - assumed 'total' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 115
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 114
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant total - assumed 'total' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 115
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 114
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant total - assumed 'total' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 115
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 114
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant total - assumed 'total' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 115
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 114
+[16-Aug-2019 14:02:53 America/New_York] PHP Notice:  Use of undefined constant total - assumed 'total' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 115
+[16-Aug-2019 18:03:49 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 14:03:49 America/New_York] PHP Notice:  Use of undefined constant pileID - assumed 'pileID' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/compostAccumulation.php on line 166
+[16-Aug-2019 18:05:13 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[16-Aug-2019 14:05:13 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[16-Aug-2019 14:05:13 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[16-Aug-2019 14:05:13 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[16-Aug-2019 14:05:13 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[16-Aug-2019 18:05:25 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[16-Aug-2019 14:05:25 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[16-Aug-2019 18:06:46 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[16-Aug-2019 18:06:46 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[16-Aug-2019 14:06:46 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[16-Aug-2019 14:06:46 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[16-Aug-2019 14:06:46 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[16-Aug-2019 18:06:55 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[16-Aug-2019 18:06:55 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[16-Aug-2019 18:08:27 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[16-Aug-2019 18:08:27 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[16-Aug-2019 14:08:27 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[16-Aug-2019 14:08:27 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[16-Aug-2019 14:08:27 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[16-Aug-2019 18:08:35 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[16-Aug-2019 18:08:35 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[16-Aug-2019 18:09:39 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[16-Aug-2019 18:09:39 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[16-Aug-2019 14:09:39 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[16-Aug-2019 14:09:39 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[16-Aug-2019 14:09:39 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[16-Aug-2019 18:09:48 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[16-Aug-2019 18:09:48 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[16-Aug-2019 18:10:21 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[16-Aug-2019 18:10:21 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[16-Aug-2019 18:11:54 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[16-Aug-2019 18:11:54 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[16-Aug-2019 14:11:54 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[16-Aug-2019 14:11:54 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[16-Aug-2019 14:11:54 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[16-Aug-2019 18:12:02 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[16-Aug-2019 18:12:02 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[17-Aug-2019 18:59:14 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[17-Aug-2019 14:59:14 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[17-Aug-2019 14:59:14 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[17-Aug-2019 14:59:14 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[17-Aug-2019 14:59:14 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[17-Aug-2019 18:59:27 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[17-Aug-2019 14:59:27 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[19-Aug-2019 17:21:03 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[19-Aug-2019 13:21:03 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[19-Aug-2019 13:21:03 America/New_York] PHP Notice:  Undefined variable: runtime in /home/rp7uf2c14b5e/public_html/farmdata/Soil/pumpInfo.php on line 76
+[19-Aug-2019 13:21:03 America/New_York] PHP Notice:  Undefined variable: comment in /home/rp7uf2c14b5e/public_html/farmdata/Soil/pumpInfo.php on line 111
+[19-Aug-2019 17:21:41 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[19-Aug-2019 13:21:41 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[19-Aug-2019 13:21:41 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[19-Aug-2019 13:21:41 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[19-Aug-2019 13:21:41 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[19-Aug-2019 17:21:50 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-01 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-01 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-02 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-02 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-03 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-03 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-04 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-04 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-05 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-05 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-06 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-06 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-07 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-07 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-08 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-08 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-09 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-09 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-10 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-10 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-11 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-11 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-12 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-12 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-13 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-13 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-14 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-14 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-15 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-15 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-16 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-16 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-17 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-17 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-18 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-18 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-19 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-19 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-20 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-20 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-21 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-21 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-22 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-22 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-23 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-23 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-24 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-24 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-25 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-25 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-26 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-26 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-27 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-27 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-28 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-28 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-29 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-29 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-30 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-30 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-31 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-01-31 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-01 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-01 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-02 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-02 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-03 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-03 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-04 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-04 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-05 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-05 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-06 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-06 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-07 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-07 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-08 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-08 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-09 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-09 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-10 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-10 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-11 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-11 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-12 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-12 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-13 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-13 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-14 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-14 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-15 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-15 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-16 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-16 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-17 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-17 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-18 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-18 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-19 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-19 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-20 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-20 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-21 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-21 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-22 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-22 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-23 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-23 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-24 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-24 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-25 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-25 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-26 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-26 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-27 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-27 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-28 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-02-28 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-01 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-01 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-02 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-02 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-03 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-03 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-04 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-04 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-05 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-05 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-06 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-06 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-07 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-07 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-08 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-08 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-09 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-09 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-10 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-10 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-11 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-11 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-12 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-12 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-13 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-13 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-14 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-14 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-15 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-15 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-16 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-16 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-17 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-17 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-18 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-18 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-19 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-19 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-20 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-20 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-21 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-21 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-22 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-22 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-23 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-23 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-24 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-24 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-25 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-25 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-26 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-26 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-27 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-27 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-28 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-28 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-29 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-29 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-30 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-30 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-31 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-03-31 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-01 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-01 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-02 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-02 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-03 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-03 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-04 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-04 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-05 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-05 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-06 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-06 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-07 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-07 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-08 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-08 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-09 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-09 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-10 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-10 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-11 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-11 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-12 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-12 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-13 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-13 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-14 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-14 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-15 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-15 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-16 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-16 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-17 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-17 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-18 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-18 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-19 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-19 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-20 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-20 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-21 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-21 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-22 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-22 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-23 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-23 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-24 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-24 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-25 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-25 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-26 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-26 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-27 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-27 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-28 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-28 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-29 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-29 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-30 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-04-30 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-01 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-01 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-02 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-02 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-03 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-03 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-04 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-04 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-05 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-05 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-06 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-06 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-07 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-07 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-08 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-08 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-09 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-09 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-10 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-10 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-11 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-11 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-12 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-12 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-13 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-13 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-14 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-14 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-15 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-15 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-16 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-16 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-17 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-17 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-18 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-18 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-19 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-19 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-20 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-20 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-21 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-21 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-22 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-22 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-23 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-23 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-24 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-24 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-25 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-25 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-26 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-26 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-27 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-27 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-28 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-28 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-29 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-29 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-30 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-30 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-31 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-05-31 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-01 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-01 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-02 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-02 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-03 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-03 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-04 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-04 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-05 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-05 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-06 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-06 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-07 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-07 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-08 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-08 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-09 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-09 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-10 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-10 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-11 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-11 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-12 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-12 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-13 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-13 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-14 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-14 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-15 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-15 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-16 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-16 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-17 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-17 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-18 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-18 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-19 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-19 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-20 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-20 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-21 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-21 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-22 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-22 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-23 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-23 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-24 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-24 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-25 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-25 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-26 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-26 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-27 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-27 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-28 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-28 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-29 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-29 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-30 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-06-30 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-01 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-01 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-02 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-02 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-03 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-03 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-04 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-04 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-05 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-05 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-06 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-06 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-07 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-07 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-08 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-08 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-09 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-09 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-10 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-10 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-11 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-11 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-12 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-12 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-13 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-13 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-14 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-14 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-15 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-15 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-16 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-16 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-17 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-17 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-18 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-18 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-19 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-19 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-20 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-20 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-21 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-21 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-22 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-22 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-23 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-23 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-24 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-24 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-25 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-25 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-26 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-26 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-27 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-27 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-28 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-28 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-29 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-29 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-30 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-30 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-31 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-07-31 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-08-01 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-08-01 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-08-02 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-08-02 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-08-03 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-08-03 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-08-04 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-08-04 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-08-05 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-08-05 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-08-06 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-08-06 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-08-07 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-08-07 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-08-08 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-08-08 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-08-09 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-08-09 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-08-10 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-08-10 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-08-11 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-08-11 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-08-12 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-08-12 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-08-13 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-08-13 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-08-14 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-08-14 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-08-15 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-08-15 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-08-16 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-08-16 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-08-17 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-08-17 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-08-18 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-08-18 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-08-19 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 186
+[19-Aug-2019 13:21:50 America/New_York] PHP Notice:  Undefined index: 2019-08-19 in /home/rp7uf2c14b5e/public_html/farmdata/Soil/irrigationReport.php on line 187
+[19-Aug-2019 17:23:01 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[19-Aug-2019 13:23:01 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[19-Aug-2019 13:23:01 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[19-Aug-2019 13:23:01 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[19-Aug-2019 13:23:01 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[19-Aug-2019 17:23:12 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[19-Aug-2019 13:23:12 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[19-Aug-2019 17:23:55 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[19-Aug-2019 13:23:55 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[19-Aug-2019 13:23:55 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[19-Aug-2019 13:23:55 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[19-Aug-2019 13:23:55 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[19-Aug-2019 17:24:08 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[19-Aug-2019 13:24:08 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[19-Aug-2019 17:25:22 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[19-Aug-2019 13:25:22 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[19-Aug-2019 13:25:22 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[19-Aug-2019 13:25:22 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[19-Aug-2019 13:25:22 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[19-Aug-2019 17:25:38 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[19-Aug-2019 13:25:38 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[19-Aug-2019 17:25:56 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[19-Aug-2019 13:25:56 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[19-Aug-2019 13:25:56 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[19-Aug-2019 13:25:56 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[19-Aug-2019 13:25:56 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[19-Aug-2019 17:26:04 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[19-Aug-2019 13:26:04 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[19-Aug-2019 17:26:58 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[19-Aug-2019 13:26:58 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[19-Aug-2019 13:26:58 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[19-Aug-2019 13:26:58 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[19-Aug-2019 13:26:58 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[19-Aug-2019 17:27:07 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[19-Aug-2019 13:27:07 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[19-Aug-2019 17:28:12 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[19-Aug-2019 17:28:12 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[19-Aug-2019 13:28:12 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[19-Aug-2019 13:28:12 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[19-Aug-2019 13:28:12 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[19-Aug-2019 17:28:21 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[19-Aug-2019 17:28:21 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[19-Aug-2019 17:30:32 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[19-Aug-2019 17:30:32 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[19-Aug-2019 13:30:32 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[19-Aug-2019 13:30:32 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[19-Aug-2019 13:30:32 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[19-Aug-2019 17:30:42 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[19-Aug-2019 17:30:42 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[19-Aug-2019 13:30:42 America/New_York] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 67
+[19-Aug-2019 13:30:42 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[19-Aug-2019 13:30:42 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[19-Aug-2019 13:30:42 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[19-Aug-2019 13:30:42 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[19-Aug-2019 13:30:42 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[19-Aug-2019 13:30:42 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[19-Aug-2019 13:30:42 America/New_York] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 67
+[19-Aug-2019 13:30:42 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[19-Aug-2019 13:30:42 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[19-Aug-2019 13:30:42 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[19-Aug-2019 13:30:42 America/New_York] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 67
+[19-Aug-2019 13:30:42 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[19-Aug-2019 13:30:42 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[19-Aug-2019 13:30:42 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[19-Aug-2019 13:30:43 America/New_York] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 67
+[19-Aug-2019 13:30:43 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[19-Aug-2019 13:30:43 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[19-Aug-2019 13:30:43 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[19-Aug-2019 13:30:43 America/New_York] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 67
+[19-Aug-2019 13:30:43 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[19-Aug-2019 13:30:43 America/New_York] PHP Notice:  Use of undefined constant seedRate - assumed 'seedRate' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[19-Aug-2019 13:30:43 America/New_York] PHP Notice:  Use of undefined constant num_pounds - assumed 'num_pounds' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 71
+[19-Aug-2019 13:30:43 America/New_York] PHP Notice:  Use of undefined constant totalSeeded - assumed 'totalSeeded' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 107
+[19-Aug-2019 13:30:43 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 114
+[19-Aug-2019 13:30:43 America/New_York] PHP Notice:  Use of undefined constant total - assumed 'total' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 115
+[19-Aug-2019 13:30:43 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 114
+[19-Aug-2019 13:30:43 America/New_York] PHP Notice:  Use of undefined constant total - assumed 'total' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 115
+[19-Aug-2019 13:30:43 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 114
+[19-Aug-2019 13:30:43 America/New_York] PHP Notice:  Use of undefined constant total - assumed 'total' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 115
+[19-Aug-2019 13:30:43 America/New_York] PHP Notice:  Use of undefined constant crop - assumed 'crop' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 114
+[19-Aug-2019 13:30:43 America/New_York] PHP Notice:  Use of undefined constant total - assumed 'total' in /home/rp7uf2c14b5e/public_html/farmdata/Soil/coverTable.php on line 115
+[19-Aug-2019 17:31:39 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[19-Aug-2019 13:31:39 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[19-Aug-2019 13:31:39 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[19-Aug-2019 13:31:39 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[19-Aug-2019 13:31:39 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[19-Aug-2019 17:32:08 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[19-Aug-2019 13:32:08 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[19-Aug-2019 17:33:19 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[19-Aug-2019 17:33:19 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[19-Aug-2019 13:33:19 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[19-Aug-2019 13:33:19 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[19-Aug-2019 13:33:19 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39

@@ -42,7 +42,7 @@ if (!$dYear) {
    $curYear = $dYear;
 }
 echo '<option value='.$curYear.' selected>'.$curYear.'</option>';
-for($year = $curYear - 3; $year < $curYear+5; $year++) {
+for($year = $curYear - 7; $year < $curYear+2; $year++) {
         echo "\n<option value =\"$year\">$year</option>";
 }
 ?>

@@ -1,0 +1,7 @@
+[19-Aug-2019 17:29:21 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[19-Aug-2019 13:29:21 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[19-Aug-2019 13:29:21 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[19-Aug-2019 13:29:21 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[19-Aug-2019 13:29:21 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[19-Aug-2019 17:29:30 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[19-Aug-2019 13:29:30 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2

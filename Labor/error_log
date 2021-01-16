@@ -1,0 +1,57 @@
+[04-Jul-2019 12:49:13 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[04-Jul-2019 08:49:13 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[04-Jul-2019 08:49:13 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[04-Jul-2019 08:49:13 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[04-Jul-2019 08:49:13 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[04-Jul-2019 08:49:13 America/New_York] PHP Notice:  Use of undefined constant task - assumed 'task' in /home/rp7uf2c14b5e/public_html/farmdata/Labor/labor.php on line 262
+[04-Jul-2019 08:49:13 America/New_York] PHP Notice:  Use of undefined constant task - assumed 'task' in /home/rp7uf2c14b5e/public_html/farmdata/Labor/labor.php on line 262
+[04-Jul-2019 08:49:13 America/New_York] PHP Notice:  Use of undefined constant task - assumed 'task' in /home/rp7uf2c14b5e/public_html/farmdata/Labor/labor.php on line 262
+[04-Jul-2019 08:49:13 America/New_York] PHP Notice:  Use of undefined constant task - assumed 'task' in /home/rp7uf2c14b5e/public_html/farmdata/Labor/labor.php on line 262
+[04-Jul-2019 08:49:13 America/New_York] PHP Notice:  Use of undefined constant task - assumed 'task' in /home/rp7uf2c14b5e/public_html/farmdata/Labor/labor.php on line 262
+[04-Jul-2019 08:49:13 America/New_York] PHP Notice:  Use of undefined constant task - assumed 'task' in /home/rp7uf2c14b5e/public_html/farmdata/Labor/labor.php on line 262
+[04-Jul-2019 08:49:13 America/New_York] PHP Notice:  Use of undefined constant task - assumed 'task' in /home/rp7uf2c14b5e/public_html/farmdata/Labor/labor.php on line 262
+[04-Jul-2019 08:49:13 America/New_York] PHP Notice:  Use of undefined constant task - assumed 'task' in /home/rp7uf2c14b5e/public_html/farmdata/Labor/labor.php on line 262
+[18-Jul-2019 14:10:29 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[18-Jul-2019 14:10:30 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[18-Jul-2019 10:10:30 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[18-Jul-2019 10:10:30 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[18-Jul-2019 10:10:30 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[18-Jul-2019 10:10:30 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'animaldb.laborview' doesn't exist in /home/rp7uf2c14b5e/public_html/farmdata/Labor/laborReport.php:26
+Stack trace:
+#0 /home/rp7uf2c14b5e/public_html/farmdata/Labor/laborReport.php(26): PDO->query('SELECT distinct...')
+#1 {main}
+  thrown in /home/rp7uf2c14b5e/public_html/farmdata/Labor/laborReport.php on line 26
+[18-Jul-2019 19:40:16 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[18-Jul-2019 19:40:16 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[18-Jul-2019 15:40:16 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[18-Jul-2019 15:40:16 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[18-Jul-2019 15:40:16 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[18-Jul-2019 19:48:22 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[18-Jul-2019 19:48:22 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[18-Jul-2019 15:48:22 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[18-Jul-2019 15:48:22 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[18-Jul-2019 15:48:22 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[18-Jul-2019 20:12:00 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[18-Jul-2019 20:12:00 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[18-Jul-2019 16:12:00 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[18-Jul-2019 16:12:00 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[18-Jul-2019 16:12:00 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[19-Aug-2019 15:17:19 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[19-Aug-2019 15:17:19 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[19-Aug-2019 11:17:19 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[19-Aug-2019 11:17:19 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[19-Aug-2019 11:17:19 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[19-Aug-2019 15:17:35 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[19-Aug-2019 15:17:35 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[19-Aug-2019 17:17:33 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[19-Aug-2019 17:17:33 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[19-Aug-2019 13:17:33 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[19-Aug-2019 13:17:33 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[19-Aug-2019 13:17:33 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39
+[19-Aug-2019 17:17:41 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[19-Aug-2019 17:17:41 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[23-Aug-2019 15:58:23 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/connection.php on line 2
+[23-Aug-2019 15:58:23 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/rp7uf2c14b5e/public_html/farmdata/design.php on line 2
+[23-Aug-2019 11:58:23 America/New_York] PHP Notice:  Undefined variable: dMonth in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 9
+[23-Aug-2019 11:58:23 America/New_York] PHP Notice:  Undefined variable: dDay in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 25
+[23-Aug-2019 11:58:23 America/New_York] PHP Notice:  Undefined variable: dYear in /home/rp7uf2c14b5e/public_html/farmdata/date.php on line 39

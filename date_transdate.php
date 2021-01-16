@@ -32,7 +32,7 @@ for($day = $tcurDay - $tcurDay+1; $day < 32; $day++) {
 <?php
 $tcurYear = strftime("%Y");
 echo '<option value='.$tcurYear.' selected>'.$tcurYear.'</option>';
-for($year = $tcurYear - 3; $year < $tcurYear+5; $year++) {
+for($year = $tcurYear -  7; $year < $tcurYear+2; $year++) {
         echo "\n<option value =\"$year\">$year</option>";
 }
 ?>
