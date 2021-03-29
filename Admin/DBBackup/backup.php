@@ -32,15 +32,16 @@ if (!empty($_POST['done'])) {
   $user = $_SESSION['dbuser'];
   $pass = $_SESSION['dbpass'];
   $file = 'files/'.$farm.'/'.$_POST['filename'];
-  $command = "mysqldump -u ".$user." -p".$pass." ".$farm." > ".$file." 2>&1";
+  $command = "mysqldump -u ".$user." -p ".$pass." ".$farm." > ".$file." 2>&1";
 
   exec($command, $out, $err);
   if ($err == 0) {
       echo "<script>alert(\"Database Backup Successful!\");</script>\n";
   } else {
       $msg=str_replace("\n", "", file_get_contents($file));
+      $msg .= "command = ". $command;
       echo "<script>alert(\"Error in Database Backup!\\n".
-        $msg."\");</script>\n";
+        "Please contact Allen Tucker if you need a backup"."\");</script>\n";
       exec("rm ".$file);
   }
 }

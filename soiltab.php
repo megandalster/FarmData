@@ -240,8 +240,7 @@ if ($_SESSION['admin']) {
 <?php
 if ($_SESSION['admin']) {
 echo '<li id="li_tspray_edit_a">  
-   <a href="/Admin/Delete/tsprayReport.php?tab=soil:soil_spray:tspray:tspray_edit" id = "tspray_edit_a" class="inactivetab">Edit/Delete</a> </li>';
-
+   <a href="/farmdata/Admin/Delete/tsprayReport.php?tab=soil:soil_spray:tspray:tspray_edit" id = "tspray_edit_a" class="inactivetab">Edit/Delete</a> </li>';
 }
 ?>
 </ul>
