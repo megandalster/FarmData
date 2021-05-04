@@ -162,11 +162,7 @@ function createTableHeader() {
 
    var bot = "<div class='pure-g'><div class='pure-u-1-2'> " +
      "<input type='button' class='pure-button submitbutton wide' " +
-     " id='newRow' name='newRow' value='New Row' onclick='copyTheRow(-1);'>" +
-     " </div> <div class='pure-u-1-2'> " +
-     "<input type='button' class='pure-button submitbutton wide' " +
-     " id='copyRow' name='copyRow' value='Copy Last Row' onclick='copyTheRow(0);'>" +
-     "</div></div>";
+     " id='newRow' name='newRow' value='New Row' onclick='copyTheRow(-1);'>";
    buttonsTop.innerHTML = bot;
    buttonsBottom.innerHTML = bot;
 

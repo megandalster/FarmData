@@ -33,7 +33,7 @@ if ($fieldName === "crop") {
 
 
 if ($fieldName === "rowsBed") {
-	$array = array(1, 2, 3, 4, 5, 7);
+    $array = array(4, 1, 2, 3, 5, 7);
 } else if 
 	(($fieldName === "seedDate" && $tableName === "transferred_to") ||
 	($fieldName === "unit" && $tableName === "harvested") ||

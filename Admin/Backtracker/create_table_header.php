@@ -21,7 +21,7 @@ $array = array($tableSize);
 $array[0] = "primaryKeyColumn";
 $i = 1;
 while ($row = $result->fetch(PDO::FETCH_NUM)) {
-	if ($row[0] === "id" || $row[0] === "username" || $row[0] === "annual" || $row[0] === "lastHarvest") {
+    if ($row[0] === "id" || $row[0] === "username" || $row[0] === "annual" || $row[0] === "lastHarvest" || $row[0] === "gen") {
 		//Nothing; don't create columns for these attributes
 	} else if ($row[0] === 'bedft' && !$_SESSION['bedft']) {
 		$array[$i] = 'beds';
