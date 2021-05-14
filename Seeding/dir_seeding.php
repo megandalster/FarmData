@@ -138,7 +138,7 @@ if (!isset($field)) {
 }
 echo '> Field Name</option>';
 */
-$result=$dbcon->query("Select fieldID from field_GH where active = 1");
+$result=$dbcon->query("Select fieldID from field_GH where active = 1 order by sortOrder");
 while ($row1 =  $result->fetch(PDO::FETCH_ASSOC)){
   $fieldID = $row1['fieldID'];
   echo "\n<option value= \"".$fieldID."\"";
@@ -310,12 +310,13 @@ name ="bedftv" id="bedftv" value ="0">
 <div class="pure-control-group">
 <label for="rowbd">Rows per bed:</label>
 <select name ="rowbd" id="rowbd" class='mobile-select'>
-<option value = 1 selected>1</option>
 <?php
-$cons=2;
+$cons=1;
 while ($cons<10) {
-    if ($cons != 6) {
-   echo "\n<option value =\"$cons\">$cons</option>";
+    if ($cons==4)
+      echo  "\n<option value = 4 selected>4</option>";
+    else if ($cons != 6) {
+      echo "\n<option value =\"$cons\">$cons</option>";
     }
    $cons++;
 }

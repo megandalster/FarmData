@@ -36,7 +36,7 @@ while ($row = $result->fetch(PDO::FETCH_ASSOC)){
 <option value="%"> All </option>
 <option value="N/A"> N/A </option>
 <?php
-$sql = "select fieldID from field_GH where active = 1";
+$sql = "select fieldID from field_GH where active = 1  order by sortOrder";
 $res = $dbcon->query($sql);
 while ($row = $res->fetch(PDO::FETCH_ASSOC)){
   echo "\n<option value= \"$row[fieldID]\">$row[fieldID]</option>";

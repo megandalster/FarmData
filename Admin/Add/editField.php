@@ -18,12 +18,17 @@ function getFieldInfo() {
    xmlhttp.send();
    var arr = eval(xmlhttp.responseText);
    console.log(arr);
-   if (arr.length == 4) {
+   if (arr.length == 5) {
       var newdiv = document.getElementById('sizeDiv');
       newdiv.innerHTML = '<label for="size">Size:</label> ' +
          '<input onkeypress= "stopSubmitOnEnter(event)";  value="' + arr[0] +
          '" type="text" name="size" id="size" onkeyup= "updateBeds();"> ' + 
          '&nbsp;acres';
+
+      newdiv = document.getElementById('sortOrderDiv');
+      newdiv.innerHTML = '<label for="sortOrder">&nbsp;&nbsp;&nbsp;&nbsp;Sort order:</label> ' +
+         '<input onkeypress= "stopSubmitOnEnter(event)";  value="' + arr[4] +
+         '" type="text" name="sortOrder" id="sortOrder" onkeyup= "updatesortOrder();"> ';
 
       newdiv = document.getElementById('bedsDiv');
       newdiv.innerHTML = '<label for="beds">Number of Beds:</label>  ' +
@@ -40,7 +45,6 @@ function getFieldInfo() {
       }
       str += '</select>';
       activeDiv.innerHTML=str;
-
 
       newdiv = document.getElementById('lengthDiv');
       newdiv.innerHTML = '<label for="length">Length:</label> ' +
@@ -61,7 +65,7 @@ function updateSize() {
    var len = parseFloat(document.getElementById('length').value);
    var beds = parseFloat(document.getElementById('beds').value);
    var bspace = parseFloat(document.getElementById('bspace').value);
-   var size = len * beds /(43560 / (bspace / 12));
+   var size = len * beds / (43560 * 12 / bspace);
    if (isNaN(size)) { size = 0; }
    document.getElementById('size').value = size.toFixed(2);
 }
@@ -79,7 +83,7 @@ function updateBeds() {
    var len = parseFloat(document.getElementById('length').value);
    var bspace = parseFloat(document.getElementById('bspace').value);
    var size = parseFloat(document.getElementById('size').value);
-   var cons = 43560 / (bspace / 12);
+   var cons = 43560 * 12 / bspace;
    var beds = cons * size / len;
    if (isNaN(beds)) { beds  = 0; }
    document.getElementById('beds').value = beds.toFixed(2);
@@ -92,13 +96,18 @@ function updateBeds() {
 <label for="fieldID">Name of Field: </label>
 <select id= "fieldID" name="fieldID" class='mobile-select' onChange='getFieldInfo();'>
 <?php
-$result = $dbcon->query("SELECT distinct fieldID from field_GH");
+$result = $dbcon->query("SELECT distinct fieldID from field_GH order by sortOrder");
 while ($row1 = $result->fetch(PDO::FETCH_ASSOC)){
   echo "\n<option value= \"".$row1[fieldID]."\">".
    $row1[fieldID]."</option>";
 }
 ?>
 </select></div>
+
+<div class = "pure-control-group" id="sortOrderDiv">
+<label for="sortOrder">&nbsp;&nbsp;&nbsp;&nbsp;Sort order:</label>
+<input type="text" name="sortOrder" id="sortOrder"> 
+</div>
 
 <div class="pure-control-group" id="lengthDiv">
 <label>Length:</label>
@@ -148,8 +157,9 @@ $beds = escapehtml($_POST['beds']);
 $length = escapehtml($_POST['length']);
 $id = escapehtml($_POST['fieldID']);
 $active = escapehtml($_POST['active']);
+$sortOrder = escapehtml($_POST['sortOrder']);
 if (isset($_POST['add'])) {
-   if ($size > 0 && !empty($id) && $beds > 0 && $length > 0) {
+   if ($size > 0 && !empty($id) && $beds > 0 && $length > 0 && $sortOrder >= 0) {
         $updateSQL = "update field_GH set size = ".$size." where fieldID = '".$id."'";
         try {
            $stmt = $dbcon->prepare($updateSQL);
@@ -182,6 +192,15 @@ if (isset($_POST['add'])) {
         } catch (PDOException $p) {
            echo "<script>alert(\"Could not update active status".$p->getMessage()."\");</script>";
            die();
+        }
+        $updateSQL = "update field_GH set sortOrder = ".$sortOrder.
+        " where fieldID = '".$id."'";
+        try {
+            $stmt = $dbcon->prepare($updateSQL);
+            $stmt->execute();
+        } catch (PDOException $p) {
+            echo "<script>alert(\"Could not update active status".$p->getMessage()."\");</script>";
+            die();
         }
         echo "<script>showAlert(\"Entered data successfully!\");</script> \n";
    } else {

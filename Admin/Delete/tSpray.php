@@ -123,7 +123,7 @@ echo "<input class='textbox mobile-input ' type='text' id='initials' name='initi
    $numRows = 0;
    while($row = $sqldata->fetch(PDO::FETCH_ASSOC)){
       $numRows++;
-      $result = $dbcon->query("Select fieldID from field_GH where active=1");
+      $result = $dbcon->query("Select fieldID from field_GH where active=1  order by sortOrder");
       $option='';
       while ($rowM = $result->fetch(PDO::FETCH_ASSOC)){
          $option = $option. "<option value = \"".$rowM[fieldID]."\">".$rowM[fieldID]."</option>";

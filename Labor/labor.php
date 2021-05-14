@@ -108,7 +108,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/farmdata/date.php';
 <select name="fieldID" id="fieldID" onChange="setAllCrops();" class="mobile-select">
 <option value="N/A">N/A</option>
 <?php
-   $sql = 'select fieldID from field_GH where active = 1';
+   $sql = 'select fieldID from field_GH where active = 1 order by sortOrder';
    $result = $dbcon->query($sql);
    while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
       echo '<option value="'.$row['fieldID'].'">'.$row['fieldID'].'</option>';

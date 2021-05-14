@@ -98,7 +98,7 @@ else {
 echo "<th>Beds</th>";
 }
 
-echo "<th>Rows/Bed</th><th>Row Feet</th>";
+echo "<th>Rows/Bed</th>";
 if ($_SESSION['labor']) {
    echo "<th>Hours</th>";
 }
@@ -106,7 +106,6 @@ if ($_SESSION['gens']) {
    echo "<th>Succ&nbsp;#</th>";
 }
 echo "<th> Annual </th>";
-echo "<th> Last Harvest Date</th>";
 echo "<th> Comments </th>";
 if ($_SESSION['admin']) {
   echo "<th>User</th><th>Edit</th><th>Delete</th>";
@@ -126,25 +125,23 @@ while ( $row = $result->fetch(PDO::FETCH_ASSOC)) {
    else {
       echo number_format((float) $row['beds'], 2, '.', '');
    }
-   echo "</td><td>";
+   echo "</td><td align='center'>";
    echo $row['rowsBed'];
-   echo "</td><td>";
-   echo number_format((float) $row['rowft'], 1, '.', '');
    echo "</td><td>";
     if ($_SESSION['labor']) {
         echo number_format((float) $row['hours'], 2, '.', '');
         echo "</td>";
     }
    if ($_SESSION['gens']) {
-      echo "<td>";
+      echo "<td align='center'>";
       echo $row['gen']."</td>";
    }
    if ($row['annual'] == 1) {
       echo "<td>Yes</td>";
-      echo "<td>&nbsp;</td>";
+   
    } else {
       echo "<td>No</td>";
-      echo "<td>".$row['lastHarvest']."</td>";
+   
    }
    echo "<td>";
    echo $row['comments'];
@@ -180,13 +177,6 @@ if($crop != '%') {
       echo '<label for="total"> Total Bed Feet Planted:</label> '.
               '<input disabled type="textbox" name="total" id="total" class="textbox2" value='
               .number_format((float) $row5['totalSum'], 1, '.', '').'>';
-      echo "</div>";
-   }
-   while($row5 = $totalResult->fetch(PDO::FETCH_ASSOC)){
-      echo '<div class="pure-control-group">';
-      echo '<label for="total"> Total Row Feet Planted:</label>'.
-             ' <input disabled type="textbox" name="total" id="total" class="textbox2" value='.
-             number_format((float) $row5['totalSum'], 1, '.', '').'>';
       echo "</div>";
    }
    while($row6 = $acreTotal->fetch(PDO::FETCH_ASSOC)){

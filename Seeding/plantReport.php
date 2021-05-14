@@ -39,7 +39,7 @@ while ($row1 =  $result->fetch(PDO::FETCH_ASSOC)){
 <select name='fieldID' class='mobile-select'>
 <option value = "%" selected="selected"> All </option>
 <?php
-$result = $dbcon->query("SELECT distinct fieldID from dir_planted");
+$result = $dbcon->query("Select fieldID from field_GH order by sortOrder");
 while ($row1 =  $result->fetch(PDO::FETCH_ASSOC)){
   echo "\n<option value= \"$row1[fieldID]\">$row1[fieldID]</option>";
 }

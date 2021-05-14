@@ -67,6 +67,11 @@ function show_confirm() {
 
 <?php
 echo'<div class = "pure-control-group">';
+echo'<label for="sort">&nbsp;&nbsp;&nbsp;&nbsp;Sort order:</label> ';
+echo'<input onkeypress= "stopSubmitOnEnter(event)"; value = 0 class="textbox2 mobile-input" type="text" name="sortOrder" id="sortOrder" onkeyup="updateSize();">';
+echo'</div>';
+
+echo'<div class = "pure-control-group">';
 echo'<label for="length">Length:';
 if ($_SESSION['mobile']) echo "(feet)";
 echo '</label> ';
@@ -106,8 +111,9 @@ if (isset($_POST['add'])) {
    $size = escapehtml($_POST['size']);
    $beds = escapehtml($_POST['beds']);
    $length = escapehtml($_POST['length']);
-   $sql="insert into field_GH(fieldID,size,numberOfBeds, length, active) values ('".$fieldID."', ".
-      $size.", ".$beds.", ".$length.",1)";
+   $sortOrder = escapehtml($_POST['sortOrder']);
+   $sql="insert into field_GH(fieldID,size,numberOfBeds, length, active, sortOrder) values ('".$fieldID."', ".
+      $size.", ".$beds.", ".$length.",1,".$sortOrder.")";
    try {
       $stmt = $dbcon->prepare($sql);
       $stmt->execute();

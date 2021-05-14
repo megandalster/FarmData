@@ -34,7 +34,7 @@ echo '</select></div>';
 <select id = "fieldID" name = "fieldID">
 <option value = "%">All</option>
 <?php 
-$result = $dbcon->query("SELECT distinct fieldID from field_GH");
+$result = $dbcon->query("SELECT distinct fieldID from field_GH order by sortOrder");
 while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
    echo "\n<option value = \"$row[fieldID]\">$row[fieldID]</option>";
 }

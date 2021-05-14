@@ -80,7 +80,7 @@ echo '<div class="pure-control-group">';
 echo '<label>Name of Field:</label> ';
 echo '<select name="fieldID" id="fieldID">';
 echo '<option value="'.$field.'" selected>'.$field.' </option>';
-$sql = 'select fieldID from field_GH where active = 1';
+$sql = 'select fieldID from field_GH where active = 1 order by sortOrder';
 $sqldata = $dbcon->query($sql);
 while ($row = $sqldata->fetch(PDO::FETCH_ASSOC)) {
    echo '<option value="'.$row['fieldID'].'">'.$row['fieldID'].' </option>';

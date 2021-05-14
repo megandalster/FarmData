@@ -10,7 +10,7 @@ $id = escapehtml($_GET["fieldID"]);
 if ($id =="%") {
    $flds = array();
    echo '<center><h2>Crop History for All Fields</h2></center>';
-   $result = $dbcon->query("Select distinct fieldID from field_GH");
+   $result = $dbcon->query("Select distinct fieldID from field_GH  order by sortOrder");
    while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
         array_push($flds, $row['fieldID']);
    } 

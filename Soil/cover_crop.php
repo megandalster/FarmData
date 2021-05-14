@@ -98,7 +98,7 @@ function show_confirm() {
 <select name ="fieldID" id="fieldID" onChange="callAll();" class='mobile-select'>
 <option value = 0 selected disabled> FieldID</option>
 <?php
-$result=$dbcon->query("Select fieldID from field_GH where active=1");
+$result=$dbcon->query("Select fieldID from field_GH where active=1 order by sortOrder");
 while ($row1 =  $result->fetch(PDO::FETCH_ASSOC)){
 echo "\n<option value= \"$row1[fieldID]\">$row1[fieldID]</option>";
 }

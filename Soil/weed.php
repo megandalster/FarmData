@@ -33,7 +33,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/farmdata/date.php';
 <label for="fieldID">Name of Field: </label>
 <select name ="fieldID" id="fieldID" class="mobile-select">
 <?php
-   $result=$dbcon->query("Select fieldID from field_GH where active=1");
+   $result=$dbcon->query("Select fieldID from field_GH where active=1 order by sortOrder");
    while ($row1 = $result->fetch(PDO::FETCH_ASSOC)){
       echo "\n<option value= '".$row1[fieldID]."'";
       if (isset($field) && $field == $row1['fieldID']) {
@@ -102,7 +102,7 @@ function addRow(){
                      '" id="fieldID'+numRows+'" class="wide">'+
                      '<option value= 0 selected disabled> Field Name </option>'+
                      '<?php
-                         $result=$dbcon->query("select fieldID from field_GH where active=1");
+                         $result=$dbcon->query("select fieldID from field_GH where active=1 order by sortOrder");
                         while($row1 = $result->fetch(PDO::FETCH_ASSOC)){
                            echo '<option value="'.$row1[fieldID].'">'.$row1[fieldID].'</option>';
                         }
