@@ -67,26 +67,7 @@ if (!$_SESSION['bedft']) {
 ?>
 <input class="textbox2 mobile-input single_table" type="text" name ="bedftv" value= 0 id="bedftv">
 </div>
-<div class="pure-control-group">
-<label for="rows">Rows per Bed:</label>
-<select name ="rowbd" id="rowbd" class="mobile-select">  
-<option selected="selected" value = 1>1 </option>
-<?php
-$cons=2;
-while ($cons<8) {
-    if ($cons != 6) {
-        echo "\n<option value =\"$cons\">$cons</option>";
-    }
-   $cons++;
-}
 
-?>
-</select>
-</div>
-<div class="pure-control-group">
-<label for="numFlats">Number of trays:</label>
-<input onkeypress= 'stopSubmitOnEnter(event)'; type = "text" name="numFlats" id="numFlats" class="textbox2 mobile-input single_table">
-</div>
 
 <?php
 if ($_SESSION['gens']) {
@@ -141,11 +122,7 @@ rows="5" cols= "30">
 <input class="submitbutton pure-button wide" type="button" value="Submit"  onclick="show_confirm();">
 </form>
 </div>
-<div class="pure-u-1-2">
-<?php
-echo '<form method="POST" action = "/Seeding/transplantReport.php?tab=seeding:transplant:transplant_report"><input type="submit" class="submitbutton pure-button wide" value = "View Table" onclick="return confirmLeave();"></form>';
-?>
-</div>
+
 </div>
 
 
@@ -189,13 +166,14 @@ function show_confirm() {
     con += "Date of Transplant: "+ mth + "-" + day + "-" + year + "<br>";
 
     var bf = document.getElementById("bedftv").value;
-    var r = document.getElementById("rowbd").value;
+    var r = 0; // document.getElementById("rowbd").value;
     var rowBed = document.getElementById("rowBed");
-
+/*
      if (checkEmpty(r)) {
         showError("Please Select the Number of Rows per Bed");
         return false;
      }
+     */
      var div = 1;
      if (rowBed && rowBed.value == "row") {
         div = r;
@@ -210,15 +188,16 @@ function show_confirm() {
         return false;
      }
      con += bed + ": "+ bf + "<br>";
-     con += "Rows/Bed: "+ r + "<br>";
+//     con += "Rows/Bed: "+ r + "<br>";
 
-     var numF = document.getElementById("numFlats").value;
-     if (checkEmpty(numF) || numF<=0 || !isFinite(numF)) {
+     var numF = 0; // document.getElementById("numFlats").value;
+/*     if (checkEmpty(numF) || !isFinite(numF)) {
          showError("Please enter a valid number of trays!");
          return false;
      }
+   
      con += "Number of trays: "+ numF+ "<br>";
-
+     */
 <?php
   include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Seeding/checkGen.php';
   if ($_SESSION['labor']) {
@@ -250,14 +229,14 @@ function show_confirm() {
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
    $comSanitized=escapehtml($_POST['comments']);
    $bedftv = escapehtml($_POST['bedftv']);
-   $numrows = escapehtml($_POST['rowbd']);
+   $numrows = 0; // escapehtml($_POST['rowbd']);
    if ($_SESSION['bedftv'] && $_POST['rowBed'] == "row") {
       $bedftv = $bedftv / $numrows;
    }
 
    $fld = escapehtml($_POST['fieldID']);
    $crop = escapehtml($_POST['crop']);
-   $numFlats = escapehtml($_POST['numFlats']);
+   $numFlats = 0; // escapehtml($_POST['numFlats']);
    $user = escapehtml($_SESSION['username']);
    if (!$_SESSION['bedft']) {
       $sql = "select length from field_GH where fieldID = '".$fld."'";

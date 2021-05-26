@@ -104,14 +104,14 @@ if ($_SESSION['gens']) {
 echo "</h2>";
 echo "</center>";
 echo "<table class='pure-table pure-table-bordered'>";
-   echo "<thead><tr><th>Crop<center></th><th>Field</th><th>Date of Tray Seeding</th><th><center>Date of Transplanting</center></th><th><center>Days in Tray</center> </th>";
+   echo "<thead><tr align=left><th>Crop</th><th>Field</th><th>Date of Tray Seeding</th><th>Date of Transplanting</th><th>Days in Tray </th>";
    if ($_SESSION['bedft']) {  
       echo "<th>Bed Feet</th>";
    }
    else {
       echo "<th>Beds</th>";
    }
-   echo "<th>Rows/Bed</th><th><center>Row Feet</center></th><th>Trays</th>";
+   
 if ($_SESSION['gens']) {
    echo "<th>Succ&nbsp;#</th>";
 }
@@ -120,7 +120,7 @@ if ($_SESSION['labor']) {
 }
 echo "<th> Annual </th>";
 echo "<th> Last Harvest Date </th>";
-echo "<th><center> Comments</center></th>";
+echo "<th>Comments</th>";
 if ($_SESSION['admin']) {
    echo "<th>User</th><th>Edit</th><th>Delete</th>";
 }
@@ -150,27 +150,11 @@ echo "</tr></thead>";
            echo number_format((float) $row['beds'], 2, '.', '');
 	}
         echo "</td><td>";
-   echo $row['rowsBed'];
-        echo "</td><td>";
-   // echo $row['rowft'];
-        echo number_format((float) $row['rowft'], 1, '.', '');
-        echo "</td><td>";
-   echo $row['flats'];
-        echo "</td><td>";
-   if ($_SESSION['gens']) {
-        echo $row['gen'];
-   echo "</td><td>";
-   }
-   if ($_SESSION['labor']) {
-     echo number_format((float) $row['hours'], 2, '.', '');
-     echo "</td>";
-   }
+   
    if ($row['annual'] == 1) {
-      echo "<td>Yes</td>";
-      echo "<td>&nbsp;</td>";
+      echo "Yes</td><td>";
    } else {
-      echo "<td>No</td>";
-      echo "<td>".$row['lastHarvest']."</td>";
+      echo "No</td><td>";
    }
    echo "<td>";
    echo $row['comments'];
@@ -208,12 +192,14 @@ echo "</tr></thead>";
       number_format((float) $row3['totalSum'], 1, '.', '').">";
       echo "</div>";
    }
+   /*
    while($row3 = $totalResult->fetch(PDO::FETCH_ASSOC)) {
       echo "<div class='pure-control-group'>";
         echo "<label for='sum'>Total Row Feet Planted: </label> <input class='textbox3' type ='text' name='sum' disabled value=".
         number_format((float) $row3['totalSum'], 1, '.', '').">";
       echo "</div>";
    }
+   */
       while($row6 = $acreTotal->fetch(PDO::FETCH_ASSOC)){
       echo '<div class="pure-control-group">';
       echo '<label for="total"> Total Acres Planted:</label>'.
@@ -234,8 +220,5 @@ echo "<input type = \"hidden\" name = \"query\" value = \"".escapehtml($sql)."\"
 echo '</form>';
 echo '</div>';
 
-echo "<div class='pure-u-1-2'>";
-echo '<form method="POST" action = "/Seeding/transplantReport.php?tab=seeding:transplant:transplant_report"><input type="submit" class="submitbutton pure-button wide" value = "Run Another Report"></form>';
-echo '</div>';
 echo '</div>';
 ?>

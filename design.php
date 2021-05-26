@@ -22,8 +22,8 @@ if (!$_SESSION['mobile']) {
 <link href="/farmdata/icon-hires.png" rel="icon" sizes="192x192" />
 </head>
 <?php
-//$cookieLifetime = 3 * 24 * 60 * 60; // three days in seconds
-//setcookie(session_name(),session_id(),time()+$cookieLifetime, '/');
+$cookieLifetime = 3 * 24 * 60 * 60; // three days in seconds
+setcookie(session_name(),session_id(),time()+$cookieLifetime, '/');
 
 echo '<link type="text/css" href="/farmdata/color.css" rel = "stylesheet">';
 /*

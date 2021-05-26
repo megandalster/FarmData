@@ -3,23 +3,23 @@ table {
 	margin-left : 6px;
 	background-color: white;
 	border-collapse:collapse;
-	width: 1000px;        
+	width: 1000px;       
 }
 
 th,td {
 	font-size:15pt;
 	border:1px solid black;
 	padding: 3px 7px 2px 7px;
-	text-align: center;
+	text-align: left;
 }
 
 th {
 	font-size:15pt;
-	text-align:center;
 	padding-top:5px;
 	padding-bottom:4px;
 	background-color: wheat;
 	color: black;
+	text-align: left;
 }
 
 tr.alt td {
@@ -31,7 +31,6 @@ tr.alt td {
 td {
 	width: 100px;
 	padding: 10px;
-	text-align: center;
 }
 
 colgroup {

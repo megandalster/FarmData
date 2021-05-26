@@ -83,7 +83,7 @@ for($yr = $curYear - 4; $yr < $curYear+5; $yr++) {echo "\n<option value =\"$yr\"
 }
 echo '</select>';
 echo '</div>';
-
+/*
 echo '<div class="pure-control-group">';
 echo '<label>Username:</label>';
 echo '<select name="user" id="user">';
@@ -98,7 +98,7 @@ if ($farm == 'dfarm') {
     echo $useropts;
 }
 echo '</select></div>';
-
+*/
 echo '<div class="pure-control-group">';
 echo '<label>Crop:</label>';
 echo '<select name="crop" id="crop">';
@@ -109,10 +109,15 @@ while ($row = $sqldata->fetch(PDO::FETCH_ASSOC)) {
    echo '<option value="'.$row['crop'].'">'.$row['crop'].' </option>';
 }
 echo '</select></div>';
-
+/*
 echo '<div class="pure-control-group">';
 echo "<label>Number of Seeds Planted:</label>";
 echo "<input type='text' class='textbox2' name='numseeds_planted' id='numseeds_planted' value='".$numseeds_planted."'>";
+echo '</div>';
+*/
+echo '<div class="pure-control-group">';
+echo "<label>Flats:</label>";
+echo "<input type='text' class='textbox2' name='flats' id='flats' value='".$flats."'>";
 echo '</div>';
 
 echo '<div class="pure-control-group">';
@@ -125,12 +130,7 @@ foreach ($vararr as $var) {
 }
 echo "</textarea>";
 echo '</div>';
-
-echo '<div class="pure-control-group">';
-echo "<label>Trays:</label>";
-echo "<input type='text' class='textbox2' name='flats' id='flats' value='".$flats."'>";
-echo '</div>';
-
+/*
 echo '<div class="pure-control-group">';
 echo "<label>Tray size:</label>";
 echo '<select name ="cellsFlat" id="cellsFlat" class="mobile-select">';
@@ -142,7 +142,7 @@ while ($row1 =  $result->fetch(PDO::FETCH_ASSOC)) {
 }
 echo '</select>';
 echo '</div>';
-
+*/
 include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Admin/Delete/getGen.php';
 
 echo '<div class="pure-control-group">';
@@ -164,15 +164,15 @@ echo "</form>";
 if ($_POST['submit']) {
     $comSanitized=str_replace("\n", "<br>", trim(escapehtml($_POST['comments'])));
     $crop = escapehtml($_POST['crop']);
-    $numseeds_planted = escapehtml($_POST['numseeds_planted']);
+//    $numseeds_planted = escapehtml($_POST['numseeds_planted']);
     // $varieties = escapehtml($_POST['varieties']);
     $varieties=str_replace("\n", "<br>", trim(escapehtml($_POST['varieties'])));
     $flats = escapehtml($_POST['flats']);
-    $cellsFlat = escapehtml($_POST['cellsFlat']);
+//    $cellsFlat = escapehtml($_POST['cellsFlat']);
     $year = escapehtml($_POST['year']);
     $month = escapehtml($_POST['month']);
     $day = escapehtml($_POST['day']);
-    $user = escapehtml($_POST['user']);
+//    $user = escapehtml($_POST['user']);
     include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Seeding/setGen.php';
    
     $sql = "update gh_seeding set username='".$user."',crop='".$crop."', seedDate='".$year."-".

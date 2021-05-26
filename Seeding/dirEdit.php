@@ -37,9 +37,9 @@ $origGen = $_GET['genSel'];
 
 
 $sqlget = "SELECT gen,id,year(plantdate) as yr, month(plantdate) as mth, day(plantdate) as dy, crop, ".
-   "username, plantdate, fieldID, bedft, rowsBed, hours, annual, year(lastHarvest) as lastYear, ".
-   "month(lastHarvest) as lastMonth, day(lastHarvest) as lastDay, comments ".
-   "FROM dir_planted where id = ".$id;
+   "username, plantdate, dir_planted.fieldID, bedft, rowsBed, hours, annual, year(lastHarvest) as lastYear, ".
+   "month(lastHarvest) as lastMonth, day(lastHarvest) as lastDay, comments, field_GH.length as len ".
+   "FROM dir_planted, field_GH where dir_planted.fieldID = field_GH.fieldID and id = ".$id;
 try {
    $sqldata = $dbcon->query($sqlget);
 } catch (PDOException $p) {
@@ -49,7 +49,9 @@ $row = $sqldata->fetch(PDO::FETCH_ASSOC);
 $user = $row['username'];
 $egen = $row['gen'];
 $field = $row['fieldID'];
-$bedftv = $row['bedft'];
+// $bedftv = $row['bedft'];
+$len = $row['len'];
+$beds = $row['bedft'] / $len;
 $rowsBed = $row['rowsBed'];
 $curYear = $row['yr'];
 $curMonth = $row['mth'];
@@ -153,10 +155,15 @@ if ($farm == 'dfarm') {
    echo $useropts;
 }
 echo '</select></div>';
-
+/*
 echo '<div class="pure-control-group">';
 echo '<label>Bed Feet:</label>';
 echo '<input type="text" class="textbox3" name="bedftv" id="bedftv" value="'.$bedftv.'">';
+echo '</div>';
+*/
+echo '<div class="pure-control-group">';
+echo '<label>Beds:</label>';
+echo '<input type="text" class="textbox3" name="beds" id="beds" value="'.$beds.'">';
 echo '</div>';
 
 echo '<div class="pure-control-group">';
@@ -199,7 +206,7 @@ echo '</fieldset>';
 echo "</form>";
 if ($_POST['submit']) {
    $comSanitized=str_replace("\n", "<br>", trim(escapehtml($_POST['comments'])));
-   $bedftv = escapehtml($_POST['bedftv']);
+   $beds = escapehtml($_POST['beds']);
    $numrows = escapehtml($_POST['rowsbed']);
    $fld = escapehtml($_POST['fieldID']);
    $crop = escapehtml($_POST['crop']);
@@ -226,7 +233,7 @@ if ($_POST['submit']) {
    }
    include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Seeding/setGen.php';
    $sql = "update dir_planted set username='".$user."', fieldID='".$fld."', plantdate='".$year."-".
-     $month."-".$day."', bedft=".$bedftv.",rowsBed=".$numrows.",hours=".$hours.",comments='".
+     $month."-".$day."', bedft=".($beds * $len).",rowsBed=".$numrows.",hours=".$hours.",comments='".
      $comSanitized."',crop='".$crop."',gen=".$gen.", annual = ".$annual.", lastHarvest = '".
      $lastYear."-".$lastMonth."-".$lastDay."' where id=".$id;
    try {

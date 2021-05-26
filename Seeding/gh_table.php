@@ -60,14 +60,13 @@ if ($_SESSION['gens']) {
 echo "</h2>";
 echo "</center>";
 echo "<table class='pure-table pure-table-bordered'>";
-echo "<thead><tr><th>Date of Seeding</th><th>Crop</th>";
-if (!$_SESSION['bigfarm']) {
-   echo "<th>Number of Seeds</th>";
-}
-echo "<th>Trays</th><th>Cells/Tray</th><th>Varieties</th>";
+echo "<thead><tr align=left><th>Date of Seeding</th><th>Crop</th>";
+
 if ($_SESSION['gens']) {
    echo "<th>Succ&nbsp;#</th>";
 }
+echo "<th>Flats</th>";
+echo "<th> Varieties</th>";
 echo "<th> Comments</th>";
 if ($_SESSION['admin']) {
    echo "<th>User</th><th>Edit</th><th>Delete</th>";
@@ -79,20 +78,11 @@ while ( $row = $result->fetch(PDO::FETCH_ASSOC)) {
    echo "</td><td>";
    echo $row['crop'];
    echo "</td><td>";
-   if (!$_SESSION['bigfarm']) {
-        echo $row['numseeds_planted'];
-        echo "</td><td>";
-   }
    echo $row['flats'];
    echo "</td><td>";
-   echo $row['cellsFlat'];
-   echo "</td><td>";
+   
    echo $row['varieties'];
    echo "</td><td>";
-   if ($_SESSION['gens']) {
-        echo $row['gen'];
-        echo "</td><td>";
-   }
    echo $row['comments'];
    echo "</td>";
    if ($_SESSION['admin']) {
@@ -154,9 +144,6 @@ if($crop != '%' && !$_SESSION['bigfarm']) {
    echo "<input type = \"hidden\" name = \"query\" value = \"".$sql."\">";
    echo '<input class="submitbutton pure-button wide" type="submit" name="submit" value="Download Report">';
 echo '</form>';
-   echo "</div>";
-   echo "<div class='pure-u-1-2'>";
-echo '<form method="POST" action = "/Seeding/gh_seedingReport.php?tab=seeding:flats:flats_report"><input type="submit" class="submitbutton pure-button wide" value = "Run Another Report"></form>';
    echo "</div>";
    echo "</div>";
 

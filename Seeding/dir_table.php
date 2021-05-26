@@ -89,7 +89,7 @@ if ($_SESSION['gens']) {
 }
 echo "</h2>";
 echo "</center>";
-echo "<thead><tr><th>Date of Seeding</th><th>Crop</th>";
+echo "<thead><tr align=left><th>Date of Seeding</th><th>Crop</th>";
 echo "<th>Field</th>";
 if ($_SESSION['bedft']) {
 echo "<th>Bed Feet</th>";
@@ -127,8 +127,9 @@ while ( $row = $result->fetch(PDO::FETCH_ASSOC)) {
    }
    echo "</td><td align='center'>";
    echo $row['rowsBed'];
-   echo "</td><td>";
+   echo "</td>";
     if ($_SESSION['labor']) {
+        echo "<td>";
         echo number_format((float) $row['hours'], 2, '.', '');
         echo "</td>";
     }
@@ -197,9 +198,5 @@ echo "<input type = \"hidden\" name = \"query\" value = \"".escapehtml($sql)."\"
 <input class = "submitbutton wide pure-button" type="submit" name="submit" value="Download Report">
 <?php
 echo '</form></div>';
-echo '<div class="pure-u-1-2">';
-echo '<form method="GET" action = "plantReport.php">';
-echo '<input type="hidden" name="tab" value="seeding:direct:direct_report">';
-echo '<input type="submit" class="submitbutton wide pure-button" value = "Run Another Report"></form>';
-echo '</div></div>';
+echo '</div>';
 ?>

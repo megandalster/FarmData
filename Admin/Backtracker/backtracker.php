@@ -157,14 +157,14 @@ function createTableHeader() {
       "onclick='insertAllRows();'></form>";
 
    // Create New Row Buttons
-   var buttonsTop = document.getElementById('buttonsTopDiv');
-   var buttonsBottom = document.getElementById('buttonsBottomDiv');
+//   var buttonsTop = document.getElementById('buttonsTopDiv');
+//   var buttonsBottom = document.getElementById('buttonsBottomDiv');
 
    var bot = "<div class='pure-g'><div class='pure-u-1-2'> " +
      "<input type='button' class='pure-button submitbutton wide' " +
      " id='newRow' name='newRow' value='New Row' onclick='copyTheRow(-1);'>";
-   buttonsTop.innerHTML = bot;
-   buttonsBottom.innerHTML = bot;
+//   buttonsTop.innerHTML = bot;
+//   buttonsBottom.innerHTML = bot;
 
 
    // Creates first row
@@ -296,7 +296,7 @@ function copyTheRow(rowNum) {
       "onclick='deleteButton(" + numRows + ");'>";
    // Copy Button
    cell = row.insertCell(tableSize + 1);
-   cell.innerHTML = "<input type='button' class='addbutton pure-button wide' value='Copy'" +
+   cell.innerHTML = "<input type='button' class='addbutton pure-button wide' value='New'" +
       "onclick='copyTheRow(" + numRows + ");'>";
 
    numRows++;

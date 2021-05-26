@@ -10,13 +10,13 @@ include $_SERVER['DOCUMENT_ROOT'].'/farmdata/stopSubmit.php';
 <h2 >Tray Seeding Input Form</h2>
 </center>
 <form name='form' class='pure-form pure-form-aligned' id='ghform' method='post' action="<?php $_PHP_SELF ?>">
-<h4> Please Input Only One Record Per Day for Each Crop.
+<h6> Please Input Only One Record Per Day for Each Crop.
 <?php
 if (!$_SESSION['seed_order']) {
    echo ' <br> List all varieties of the seeded crop in the varieties window below. ';
 }
 ?>
-</h4>
+</h6>
 <fieldset>
 <div class='pure-control-group'>
 <?php
@@ -110,20 +110,8 @@ function addInput() {}
 </script>
 
 <div class='pure-control-group'>
-<label for="numFlats">Number of trays:</label>
+<label for="numFlats">Number of flats:</label>
 <input onkeypress= 'stopSubmitOnEnter(event)'; type = "text" name="numFlats" id="numFlats" class="textbox2 mobile-input">
-</div>
-<div class='pure-control-group'>
-<label for="flatSize">Tray size:</label>
-<select name ="flatSize" id="flatSize" class="mobile-select">
-<?php
-$sql = "select cells from flat";
-$result = $dbcon->query($sql);
-while ($row1 =  $result->fetch(PDO::FETCH_ASSOC)) {
-   echo "\n<option value=".$row1['cells'].">".$row1['cells']."</option>";
-}
-?>
-</select>
 </div>
 
 <?php
@@ -150,6 +138,7 @@ echo '<label for="numSeeds">';
 if ($_SESSION['seed_order']) {
    echo 'Total ';
 }
+/*
 echo 'Seeds Planted:</label> ';
 echo '<input value=0 type="int" onkeypress="stopSubmitOnEnter(event);" name ="num_seeds" ';
 if ($_SESSION['seed_order']) {
@@ -157,6 +146,7 @@ if ($_SESSION['seed_order']) {
 }
 echo ' class="textbox2 mobile-input" id="num_seeds" value="0">';
 echo '</input></div>';
+*/
 if (!$_SESSION['seed_order']) {
    echo '<div class="pure-control-group">';
    echo '<label for="vars">Varieties:</label>';
@@ -194,32 +184,7 @@ function show_confirm() {
       showError("Enter a valid number of trays!");
       return false;
    }
-   con += "Number of trays: "+ numF + "<br>";
-
-   var fs = document.getElementById("flatSize").value;
-   if (checkEmpty(fs) && fs != 0) {
-      showError("Please select tray size");
-      return false;
-   }
-   con += "Tray Size: " + fs + " cells<br>";
-
-   var ns = document.getElementById("num_seeds").value;
-   if ((checkEmpty(ns) && ns != 0) || ns<0 || isNaN(ns)) {
-        showError("Enter a valid number of seeds planted");
-        return false;
-   }
-   con += "Number of Seeds: "+ ns + "<br>";
-   <?php
-   include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Seeding/checkGen.php';
-   ?>
-/*
-   var ret = confirm("Confirm Entry:"+"<br>"+con);       
-   if (ret) {
-      document.getElementById('cropButton').disabled=false;
-      document.getElementById('num_seeds').disabled=false;
-   }
-   return ret;
-*/
+   
    var msg = "Confirm Entry:"+"<br>"+con;
 console.log(msg);
    showConfirm(msg, 'ghform');
@@ -230,9 +195,6 @@ console.log(msg);
 <div class="pure-u-1-2">
 <input class="submitbutton pure-button wide" type="button" value="Submit" onclick= "show_confirm();">
 </form>
-</div>
-<div class="pure-u-1-2">
-<form method="POST" action = "/Seeding/gh_seedingReport.php?tab=seeding:flats:flats_report"><input type="submit" class="submitbutton pure-button wide" value = "View Table" onclick="return confirmLeave();"></form>
 </div>
 </div>
 <?php
@@ -288,9 +250,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       $varsSanitized=escapehtml($_POST['vars']);
    }
    include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Seeding/setGen.php';
-   $seeds = escapehtml($_POST['num_seeds']);
+   $seeds = 0; //escapehtml($_POST['num_seeds']);
    $numFlats = escapehtml($_POST['numFlats']);
-   $flatSize = escapehtml($_POST['flatSize']);
+   $flatSize = 0; // escapehtml($_POST['flatSize']);
    $user = escapehtml($_SESSION['username']);
    $sql="INSERT INTO gh_seeding(username,crop,seedDate,numseeds_planted,flats,cellsFlat,varieties,gen,".
       " comments) VALUES ('".

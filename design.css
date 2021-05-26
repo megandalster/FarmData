@@ -131,6 +131,7 @@ height: 100px;
 	position: relative;
 	/*text-shadow: 1px 1px 1px #000;*/
 	outline: none;
+	display: inline-block;
 }
 .secondbutton {
 	color: #523d19;

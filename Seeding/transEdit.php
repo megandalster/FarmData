@@ -39,12 +39,17 @@ $tcurDay = $_GET['tday'];
 
 $sqlget = "SELECT id, gen, year(transdate) as tyr, month(transdate) as tmth, day(transdate) as tdy, ".
    "crop, username, year(seedDate) as syr, month(seedDate) as smth, day(seedDate) as sdy, transdate, ".
-   "seedDate, fieldID, bedft, rowsBed, hours, flats, comments, annual, year(lastHarvest) as lastYear, ".
-   "month(lastHarvest) as lastMonth, day(lastHarvest) as lastDay ".
-   "FROM transferred_to WHERE id = ".$id;
-
-$sqldata = $dbcon->query($sqlget);
+   "seedDate, transferred_to.fieldID, bedft, rowsBed, hours, flats, comments, annual, year(lastHarvest) as lastYear, ".
+   "month(lastHarvest) as lastMonth, day(lastHarvest) as lastDay, field_GH.length as len ".
+   "FROM transferred_to, field_GH WHERE transferred_to.fieldID = field_GH.fieldID and id = ".$id;
+try {
+    $sqldata = $dbcon->query($sqlget);
+} catch (PDOException $p) {
+    phpAlert('', $p);
+}
 $row = $sqldata->fetch(PDO::FETCH_ASSOC);
+//$sqldata = $dbcon->query($sqlget);
+//$row = $sqldata->fetch(PDO::FETCH_ASSOC);
 
 $id = $row['id'];
 $egen = $row['gen'];
@@ -61,6 +66,8 @@ $transdate = $row['transdate'];
 $seedDate = $row['seedDate'];
 $fieldID = $row['fieldID'];
 $bedftv = $row['bedft'];
+$len = $row['len'];
+$beds = $row['bedft'] / $len;
 $rowsBed = $row['rowsBed'];
 $hours = $row['hours'];
 $flats = $row['flats'];
@@ -191,12 +198,17 @@ while ($row = $sqldata->fetch(PDO::FETCH_ASSOC)) {
    echo "<option value='".$row['fieldID']."'>".$row['fieldID']."</option>";
 }
 echo '</select></div>';
-
+/*
 echo '<div class="pure-control-group">';
 echo "<label>Bed Feet Planted:</label>";
 echo "<input type='text' class='textbox2' name='bedfeet' id='bedfeet' value='".$bedftv."'>";
 echo "</div>";
-
+*/
+echo '<div class="pure-control-group">';
+echo "<label>Beds Planted:</label>";
+echo "<input type='text' class='textbox2' name='beds' id='beds' value='".$beds."'>";
+echo "</div>";
+/*
 echo '<div class="pure-control-group">';
 echo "<label>Rows per Bed:</label>";
 echo '<select name="rowsbed" id="rowsbed">';
@@ -212,7 +224,7 @@ echo '<div class="pure-control-group">';
 echo "<label>Number of Trays:</label>";
 echo "<input type='text' class='textbox2' name='flats' id='flats' value='".$flats."'>";
 echo "</div>";
-
+*/
 include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Admin/Delete/getGen.php';
 if ($_SESSION['labor']) {
    echo '<div class="pure-control-group">';
@@ -249,9 +261,10 @@ if ($_POST['submit']) {
    $comments=str_replace("\n", "<br>", trim(escapehtml($_POST['comments'])));
    $crop = escapehtml($_POST['crop']);
    $fieldID = escapehtml($_POST['fieldID']);
-   $flats = escapehtml($_POST['flats']);
-   $bedftv = escapehtml($_POST['bedfeet']);
-   $rowsbed = escapehtml($_POST['rowsbed']);
+//   $flats = escapehtml($_POST['flats']);
+   $beds = escapehtml($_POST['beds']);
+   $bedftv = $beds * $len;
+//   $rowsbed = escapehtml($_POST['rowsbed']);
    if ($_SESSION['labor']) {
       $hours = escapehtml($_POST['hours']);
    }
@@ -273,7 +286,7 @@ if ($_POST['submit']) {
  
    $sql = "update transferred_to set username='".$username."',crop='".$crop."', seedDate='".$seedDate."', 
       transdate='".$transYear."-".$transMonth."-".$transDay."', flats='".$flats."', bedft='"
-      .$bedftv."', rowsBed='".$rowsbed."', hours='".$hours."', comments='".$comments."', fieldID='".
+      .$bedftv."', rowsBed='".$rowsBed."', hours='".$hours."', comments='".$comments."', fieldID='".
       $fieldID."',gen=".$gen.", annual = ".$annual.", lastHarvest = '".
       $lastYear."-".$lastMonth."-".$lastDay."' WHERE id=".$id;
 
