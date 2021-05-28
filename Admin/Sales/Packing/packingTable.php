@@ -1,9 +1,9 @@
 <?php session_start();
 
-include_once $_SERVER['DOCUMENT_ROOT'].'/farmdata//Applications/MAMP/htdocs/farmdata/connection.php';
-include $_SERVER['DOCUMENT_ROOT'].'/farmdata//Applications/MAMP/htdocs/farmdata/authentication.php';
-include $_SERVER['DOCUMENT_ROOT'].'/farmdata//Applications/MAMP/htdocs/farmdata/design.php';
-include $_SERVER['DOCUMENT_ROOT'].'/farmdata//Applications/MAMP/htdocs/farmdata/Admin/Delete/warn.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/authentication.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Admin/Delete/warn.php';
 ?>
 
 <?php

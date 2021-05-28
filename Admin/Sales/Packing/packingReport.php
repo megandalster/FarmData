@@ -4,9 +4,9 @@
 <input type="hidden" name="tab" value='admin:admin_sales:packing:packing_report'>
 
 <?php
-include_once $_SERVER['DOCUMENT_ROOT'].'/farmdata//Applications/MAMP/htdocs/farmdata/connection.php';
-include $_SERVER['DOCUMENT_ROOT'].'/farmdata//Applications/MAMP/htdocs/farmdata/authentication.php';
-include $_SERVER['DOCUMENT_ROOT'].'/farmdata//Applications/MAMP/htdocs/farmdata/design.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/farmdata/connection.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/authentication.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/design.php';
 ?>
 
 <center><h2>Packing Report</h2></center>
@@ -14,12 +14,12 @@ include $_SERVER['DOCUMENT_ROOT'].'/farmdata//Applications/MAMP/htdocs/farmdata/
 <?php
 echo "<div class = 'pure-control-group'>";
 echo "<label for='from'>From:</label>";
-include $_SERVER['DOCUMENT_ROOT'].'/farmdata//Applications/MAMP/htdocs/farmdata/date.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/date.php';
 echo '</div>';
 
 echo "<div class = 'pure-control-group'>";
 echo "<label for='to'>To:</label>";
-include $_SERVER['DOCUMENT_ROOT'].'/farmdata//Applications/MAMP/htdocs/farmdata/date_transdate.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/date_transdate.php';
 echo '</div>';
 ?>
 

@@ -32,7 +32,7 @@
  $laborc = false;
  $harvesting = false;
 // assumes onload not called from this file
- include '/Applications/MAMP/htdocs/farmdata/chooseCrop.php';
+ include $_SERVER['DOCUMENT_ROOT'].'/farmdata/chooseCrop.php';
 ?>
 
 <div class="pure-control-group" id = "annualdiv">
@@ -47,7 +47,7 @@
 </div>
 
 <?php
-include '/Applications/MAMP/htdocs/farmdata/Seeding/annual.php';
+include $_SERVER['DOCUMENT_ROOT'].'/farmdata/Seeding/annual.php';
 ?>
 
 <div class="pure-control-group" id="seedInput">
